@@ -4,7 +4,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-// import profilePic from "../../public/images/my-avatar.jpg";
+import profilePic from "../../public/images/portrait.jpg";
 
 export default function Home() {
   return (
@@ -20,25 +20,24 @@ export default function Home() {
           de Vue qui sont mes librairies de prédilection."
         />
       </Head>
-      <main className="flex items-center text-dark w-full min-h-screen dark:text-light sm:items-start">
-        <Layout className="pt-0 md:pt-16 sm:pt-16">
+      <main className="flex items-center text-dark w-full dark:text-light sm:items-start">
+        <Layout className=" md:pt-16 sm:pt-16">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 md:w-full">
-              {/* <Image
+              <Image
                 src={profilePic}
                 alt="Mathieu Enault"
-                className="w-full h-auto lg:hidden md:inline-block md:w-full"
+                width={400}
+                height={600}
+                className="m-auto"
                 priority
-                sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              50vw"
-              /> */}
+              />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
-                text="Développeur front-end React/VueJs en recherche d'emploi"
+                text="Développeur front-end ReactJs/VueJs en recherche d'emploi"
                 className="!text-6xl !text-left 
-                xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-3xl
+                xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-2xl
                 "
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">

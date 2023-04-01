@@ -11,7 +11,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
     >
       <LiIcon reference={ref} />
       <motion.div
-        initial={{ y: 50 }}
+        initial={{ y: 10 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
@@ -25,10 +25,10 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
             @{company}
           </a>
         </h3>
-        <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
+        <span className="text-xl capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
           {time} | {address}
         </span>
-        <p className="font-medium w-full md:text-sm">{work}</p>
+        <p className="text-xl font-medium w-full md:text-sm">{work}</p>
       </motion.div>
     </li>
   );
@@ -41,8 +41,8 @@ const Experience = () => {
     offset: ["start end", "center start"],
   });
   return (
-    <div className="my-64">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
+    <div className="my-64 lg:my-32 sm:my-16">
+      <h2 className="font-bold text-6xl mb-32 w-full text-center 2xl:!text-4xl  lg:!text=3xl md:!text-3xl sm:!text-2xl md:mb-16">
         Experience
       </h2>
 

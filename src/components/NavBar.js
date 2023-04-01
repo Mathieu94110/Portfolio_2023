@@ -89,7 +89,7 @@ const NavBar = () => {
         ></span>
       </button>
 
-      <div className="w-full flex justify-between items-center lg:hidden">
+      <div className="w-full flex justify-between items-center text-2xl lg:hidden ">
         <nav className="flex items-center justify-center">
           <CustomLink href="/" title="Accueil" className="mr-4" />
           <CustomLink href="/about" title="A propos de moi" className="mx-4" />
@@ -101,7 +101,7 @@ const NavBar = () => {
           <motion.a
             href="https://github.com/Mathieu94110"
             target={"_blank"}
-            className="w-6 mx-3"
+            className="w-12 mx-3"
             whileHover={{ y: -2 }}
             linke
             whileTap={{ scale: 0.9 }}
@@ -112,7 +112,7 @@ const NavBar = () => {
             href="https://www.linkedin.com/in/mathieu-enault-2a571084
             "
             target={"_blank"}
-            className="w-6 mx-3"
+            className="w-12 mx-3"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
           >

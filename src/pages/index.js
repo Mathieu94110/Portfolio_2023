@@ -21,26 +21,26 @@ export default function Home() {
         />
       </Head>
       <main className="flex items-center text-dark w-full dark:text-light sm:items-start">
-        <Layout className=" md:pt-16 sm:pt-16">
-          <div className="flex items-center justify-between w-full lg:flex-col">
-            <div className="w-1/2 md:w-full">
+        <Layout className=" md:pt-16">
+          <div className="flex items-center justify-between w-full lg:flex-col h-[calc(100vh_-_180px)] sm:h-auto">
+            <div className="w-1/3 md:w-full">
               <Image
                 src={profilePic}
                 alt="Mathieu Enault"
                 width={400}
                 height={600}
-                className="m-auto"
+                className="m-auto  sm:h-[300px] sm:w-auto"
                 priority
               />
             </div>
-            <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
+            <div className="w-2/3 mx-8 flex flex-col items-center self-center lg:w-full lg:text-center sm:pr-0">
               <AnimatedText
                 text="Développeur front-end ReactJs/VueJs en recherche d'emploi"
                 className="!text-6xl !text-left 
-                xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-2xl
+                2xl:!text-4xl lg:!text-center lg:!text=3xl md:!text-3xl sm:!text-2xl
                 "
               />
-              <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
+              <p className="my-4 text-base font-medium 3xl:text-xl md:text-sm sm:text-xs">
                 Ayant décider de m'orienté dans le développement web il y a 4
                 ans, je recherche constamment à améliorer mes compétences en
                 créant de nouvelles applications et en renforçant mes

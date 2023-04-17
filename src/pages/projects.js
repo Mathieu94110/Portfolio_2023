@@ -75,14 +75,41 @@ const Project = ({ title, type, img, link, github, skills }) => {
           className="w-full bg-white rounded-b-2xl rounded-bl-2xl py-2 px-5 h-1/6 flex items-center"
         >
           {skills?.map((skill, index) => (
-            <li className="w-9 h-9 mx-2 flex items-center justify-center">
-              <Image src={skill} alt={skill} key={index} />
+            <li
+              className="w-9 h-9 mx-2 flex items-center justify-center"
+              key={index}
+            >
+              <Image src={skill} alt={skill} />
             </li>
           ))}
         </ul>
       </div>
     </article>
   );
+};
+
+const variants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const images = {
+  hidden: {
+    opacity: 0,
+    y: 30,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+    },
+  },
 };
 
 const projects = () => {
@@ -102,8 +129,13 @@ const projects = () => {
             className="mb-16 3xl:!text-6xl 2xl:!text-4xl sm:mb-8 sm:!text-lg"
           />
 
-          <div className="grid grid-cols-4 gap-12 2xl:grid-cols-3 xl:grid-cols-2 sm:grid-cols-1">
-            <div>
+          <motion.div
+            variants={variants}
+            initial="hidden"
+            animate="show"
+            className="grid grid-cols-4 gap-12 2xl:grid-cols-3 xl:grid-cols-2 sm:grid-cols-1"
+          >
+            <motion.div variants={images} class="group relative">
               <Project
                 title="Template responsive go to the moon"
                 img={GoToTheMoonImg}
@@ -111,8 +143,8 @@ const projects = () => {
                 github="https://github.com/Mathieu94110/Go-to-the-moon-project"
                 skills={IntegrationProjectsImgs}
               />
-            </div>
-            <div>
+            </motion.div>
+            <motion.div variants={images} class="group relative">
               <Project
                 title="Template responsive travel agency"
                 img={TravelAgencyImg}
@@ -120,8 +152,8 @@ const projects = () => {
                 github="https://github.com/Mathieu94110/Travel-agency-project"
                 skills={IntegrationProjectsImgs}
               />
-            </div>
-            <div>
+            </motion.div>
+            <motion.div variants={images} class="group relative">
               <Project
                 title="CryptoApp"
                 img={CrypoAppImg}
@@ -129,9 +161,9 @@ const projects = () => {
                 link="https://mathieu94110.github.io/Crypto_tracking/"
                 skills={CryptoProjectImgs}
               />
-            </div>
+            </motion.div>
 
-            <div>
+            <motion.div variants={images} class="group relative">
               <Project
                 title="Mon application Spotify"
                 img={SpotifyAppImg}
@@ -139,9 +171,9 @@ const projects = () => {
                 github="https://github.com/Mathieu94110/My_spotify-app"
                 skills={SpotifyProjectImgs}
               />
-            </div>
+            </motion.div>
 
-            <div>
+            <motion.div variants={images} class="group relative">
               <Project
                 img={EcoAppImg}
                 title="Eco"
@@ -149,8 +181,8 @@ const projects = () => {
                 github="https://github.com/Mathieu94110/Eco"
                 skills={EcoProjectImgs}
               />
-            </div>
-            <div>
+            </motion.div>
+            <motion.div variants={images} class="group relative">
               <Project
                 img={CoctailsAppImg}
                 title="CocktailsApp"
@@ -158,9 +190,9 @@ const projects = () => {
                 github="https://github.com/Mathieu94110/CocktailsApp"
                 skills={cocktailsProjectImgs}
               />
-            </div>
+            </motion.div>
 
-            <div>
+            <motion.div variants={images} class="group relative">
               <Project
                 img={AirBnbCloneImg}
                 title="Airbnb Clone"
@@ -168,8 +200,8 @@ const projects = () => {
                 github="https://github.com/Mathieu94110/AirBnbClone"
                 skills={NextsJsCloneProjectsImgs}
               />
-            </div>
-            <div>
+            </motion.div>
+            <motion.div variants={images} class="group relative">
               <Project
                 img={TwitterCloneImg}
                 title="Twitter Clone"
@@ -177,8 +209,8 @@ const projects = () => {
                 github="https://github.com/Mathieu94110/AirBnbClone"
                 skills={NextsJsCloneProjectsImgs}
               />
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </Layout>
       </main>
     </>

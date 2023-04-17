@@ -51,19 +51,19 @@ export default function ContactForm() {
     <>
       <div className="w-full flex justify-evenly lg:block">
         <div className="w-1/3 place-items: center flex flex-col h-full justify-center items-start lg:h-auto lg:justify-center lg:w-auto lg:mx-auto lg:w-1/2 lg:items-center">
-          <h2 className="mb-10 text-lg font-bold uppercase text-dark/75 dark:text-light/75 sm:text-base sm:font-medium">
+          <h2 className="my-10 text-lg font-bold uppercase text-dark/75 dark:text-light/75 md:my-6 sm:my-4 sm:text-base sm:font-medium">
             Coordonnées
           </h2>
           <div className="3xl:!text-2xl 2xl:!text-xl sm:!text-base  md:font-medium">
-            <div className="flex items-center mb-10">
+            <div className="flex items-center md:my-6 sm:my-4  my-10">
               <>
                 <PhoneIcon /> <span className="ml-4">0615218101</span>
               </>{" "}
             </div>
           </div>
 
-          <div className="my-4 3xl:!text-2xl 2xl:!text-xl sm:!text-base md:font-medium">
-            <div className="flex items-center">
+          <div className="my-10 3xl:!text-2xl 2xl:!text-xl sm:!text-base md:my-6 sm:my-4 md:font-medium">
+            <div className="flex items-center ">
               <>
                 <EmailIcon /> <span className="ml-4">me94110@gmail.com</span>
               </>{" "}
@@ -73,7 +73,7 @@ export default function ContactForm() {
 
         <div className="w-[600px] border rounded-lg border-solid border-black shadow-[0_2px_10px_rgba(124,124,124,0.6)] overflow-hidden  p-2 flex flex-col justify-center items-center lg:mx-auto sm:w-full">
           <form
-            className="w-full p-4 flex-1 flex flex-col justify-center items-center sm:p-0"
+            className="w-full p-4 flex-1 flex flex-col  items-center sm:p-0"
             onSubmit={handleSubmit(onSubmit)}
             noValidate
           >

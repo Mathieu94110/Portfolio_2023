@@ -4,6 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import { EmailIcon, PhoneIcon } from "../Icons";
 import "react-toastify/dist/ReactToastify.min.css";
 import "react-toastify/dist/ReactToastify.css";
+
 export default function ContactForm() {
   const {
     register,
@@ -50,29 +51,29 @@ export default function ContactForm() {
     <>
       <div className="w-full flex justify-evenly lg:block">
         <div className="w-1/3 place-items: center flex flex-col h-full justify-center items-start lg:h-auto lg:justify-center lg:w-auto lg:mx-auto lg:w-1/2 lg:items-center">
-          <h2 className="mb-8 text-lg font-bold uppercase text-dark/75 dark:text-light/75 sm:text-base sm:font-medium">
+          <h2 className="mb-10 text-lg font-bold uppercase text-dark/75 dark:text-light/75 sm:text-base sm:font-medium">
             Coordonnées
           </h2>
-          <p className="3xl:!text-2xl 2xl:!text-xl sm:!text-base  md:font-medium">
-            <div className="flex items-center">
+          <div className="3xl:!text-2xl 2xl:!text-xl sm:!text-base  md:font-medium">
+            <div className="flex items-center mb-10">
               <>
                 <PhoneIcon /> <span className="ml-4">0615218101</span>
               </>{" "}
             </div>
-          </p>
+          </div>
 
-          <p className="my-4 3xl:!text-2xl 2xl:!text-xl sm:!text-base md:font-medium">
+          <div className="my-4 3xl:!text-2xl 2xl:!text-xl sm:!text-base md:font-medium">
             <div className="flex items-center">
               <>
                 <EmailIcon /> <span className="ml-4">me94110@gmail.com</span>
               </>{" "}
             </div>
-          </p>
+          </div>
         </div>
 
         <div className="w-[600px] border rounded-lg border-solid border-black shadow-[0_2px_10px_rgba(124,124,124,0.6)] overflow-hidden  p-2 flex flex-col justify-center items-center lg:mx-auto sm:w-full">
           <form
-            className="w-full p-10 flex-1 flex flex-col justify-center items-center sm:p-0"
+            className="w-full p-4 flex-1 flex flex-col justify-center items-center sm:p-0"
             onSubmit={handleSubmit(onSubmit)}
             noValidate
           >

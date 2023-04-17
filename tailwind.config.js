@@ -47,6 +47,7 @@ module.exports = {
       boxShadow: {
         "3xl": "0 15px 15px 1px rgba(80,230,217, 0.4)",
       },
+      visibility: ["group-hover"],
     },
     screens: {
       "3xl": { min: "1536px" },

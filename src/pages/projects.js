@@ -41,7 +41,7 @@ const cocktailsProjectImgs = [
 ];
 const NextsJsCloneProjectsImgs = [NextImg, TypescriptImg, TailwindCssImg];
 
-const Project = ({ title, type, img, link, github, skills }) => {
+const Project = ({ title, img, link, github, skills }) => {
   return (
     <article className="w-4/6  mx-auto h-auto border border-solid  border-black rounded-2xl">
       <div className="w-full h-full relative self-center justify-self-center">
@@ -93,6 +93,7 @@ const variants = {
   show: {
     opacity: 1,
     transition: {
+      delay: 0.5,
       staggerChildren: 0.2,
     },
   },
@@ -126,7 +127,7 @@ const projects = () => {
         <Layout>
           <AnimatedText
             text="Découvrez certains de mes projets!"
-            className="mb-16 3xl:!text-6xl 2xl:!text-4xl sm:mb-8 sm:!text-lg"
+            className="mb-16 3xl:!text-6xl 2xl:mb-12 2xl:!text-4xl sm:mb-8 sm:!text-lg"
           />
 
           <motion.div

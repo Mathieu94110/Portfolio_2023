@@ -27,9 +27,8 @@ export default function Home() {
               <Image
                 src={profilePic}
                 alt="Mathieu Enault"
-                width={400}
-                height={600}
-                className="m-auto  sm:h-[300px] sm:w-auto"
+                width={200}
+                className="m-auto 2xl:w-[300px]  3xl:w-[400px] "
                 priority
               />
             </div>

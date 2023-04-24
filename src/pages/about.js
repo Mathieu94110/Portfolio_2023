@@ -3,6 +3,7 @@ import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Layout from "@/components/Layout";
 import Skills from "@/components/Skills";
+import Stack from "@/components/Stack";
 import Head from "next/head";
 import Image from "next/image";
 import profilePic from "../../public/images/portrait.jpg";
@@ -64,6 +65,7 @@ bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 xl:col-start-2 xl:col-
           <Skills />
           <Experience />
           <Education />
+          <Stack />
         </Layout>
       </main>
     </>

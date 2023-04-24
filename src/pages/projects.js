@@ -5,41 +5,49 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import GoToTheMoonImg from "../../public/images/projects_images/go-to-the-moon.png";
-import TravelAgencyImg from "../../public/images/projects_images/travel-agency.png";
-import CrypoAppImg from "../../public/images/projects_images/crypto-app.png";
-import SpotifyAppImg from "../../public/images/projects_images/spotify.jpg";
-import EcoAppImg from "../../public/images/projects_images/eco.png";
-import CoctailsAppImg from "../../public/images/projects_images/cocktails-app.png";
-import AirBnbCloneImg from "../../public/images/projects_images/airbnb-clone.png";
-import TwitterCloneImg from "../../public/images/projects_images/twitter-elon-musk.jpg";
-import HtmlCssImg from "../../public/images/skills_images/html-css.png";
-import JavascriptImg from "../../public/images/skills_images/javascript.png";
-import SassImg from "../../public/images/skills_images/sass.png";
-import MongoDbtImg from "../../public/images/skills_images/mongo-db.png";
-import NodeJsImg from "../../public/images/skills_images/nodejs.jpg";
-import ReactImg from "../../public/images/skills_images/react.jpg";
-import SpotifyLogoImg from "../../public/images/skills_images/spotify-logo.png";
-import TypescriptImg from "../../public/images/skills_images/typescript.png";
-import VueImg from "../../public/images/skills_images/vue.png";
-import NextImg from "../../public/images/skills_images/next.png";
-import TailwindCssImg from "../../public/images/skills_images/tailwindcss.png";
+import IMAGES from "../../public/images";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
 
-const IntegrationProjectsImgs = [HtmlCssImg, JavascriptImg, SassImg];
-const CryptoProjectImgs = [ReactImg, TypescriptImg, SassImg];
-const SpotifyProjectImgs = [ReactImg, SpotifyLogoImg, TypescriptImg, SassImg];
-const EcoProjectImgs = [VueImg, NodeJsImg, MongoDbtImg, TypescriptImg, SassImg];
-const cocktailsProjectImgs = [
-  ReactImg,
-  NodeJsImg,
-  MongoDbtImg,
-  TypescriptImg,
-  SassImg,
+const HelloWorldImgs = [IMAGES.logoHtmlCss, IMAGES.logoJavascript];
+const goToTheMoonAndTravelAgencyImgs = [
+  IMAGES.logoHtmlCss,
+  IMAGES.logoJavascript,
+  IMAGES.logoSass,
 ];
-const NextsJsCloneProjectsImgs = [NextImg, TypescriptImg, TailwindCssImg];
+
+const CryptoProjectImgs = [
+  IMAGES.logoReact,
+  IMAGES.logoTypescript,
+  IMAGES.logoSass,
+];
+const SpotifyProjectImgs = [
+  IMAGES.logoReact,
+  IMAGES.logoTypescript,
+  IMAGES.spotifyLogo,
+  IMAGES.logoSass,
+];
+const EcoProjectImgs = [
+  IMAGES.logoVue,
+  IMAGES.logoTypescript,
+  IMAGES.logoNodeJs,
+  IMAGES.logoMongoDb,
+  IMAGES.logoSass,
+];
+const cocktailsProjectImgs = [
+  IMAGES.logoReact,
+  IMAGES.logoTypescript,
+  IMAGES.logoNodeJs,
+  IMAGES.logoMongoDb,
+  IMAGES.logoSass,
+];
+
+const NextsJsCloneProjectsImgs = [
+  IMAGES.logoNextJs,
+  IMAGES.logoTypescript,
+  IMAGES.logoTailwindCss,
+];
 
 const Project = ({ title, img, link, github, skills }) => {
   return (
@@ -139,25 +147,34 @@ const projects = () => {
             <motion.div variants={images} class="group relative">
               <Project
                 title="Template responsive go to the moon"
-                img={GoToTheMoonImg}
+                img={IMAGES.helloWorld}
+                link="https://mathieu94110.github.io/Hello-world-project/"
+                github="https://github.com/Mathieu94110/Hello-world-project"
+                skills={HelloWorldImgs}
+              />
+            </motion.div>
+            <motion.div variants={images} class="group relative">
+              <Project
+                title="Template responsive go to the moon"
+                img={IMAGES.goToTheMoon}
                 link="https://mathieu94110.github.io/Go-to-the-moon-project/"
                 github="https://github.com/Mathieu94110/Go-to-the-moon-project"
-                skills={IntegrationProjectsImgs}
+                skills={goToTheMoonAndTravelAgencyImgs}
               />
             </motion.div>
             <motion.div variants={images} class="group relative">
               <Project
                 title="Template responsive travel agency"
-                img={TravelAgencyImg}
+                img={IMAGES.travelAgency}
                 link="https://mathieu94110.github.io/Travel-agency-project/"
                 github="https://github.com/Mathieu94110/Travel-agency-project"
-                skills={IntegrationProjectsImgs}
+                skills={goToTheMoonAndTravelAgencyImgs}
               />
             </motion.div>
             <motion.div variants={images} class="group relative">
               <Project
                 title="CryptoApp"
-                img={CrypoAppImg}
+                img={IMAGES.cryptoApp}
                 github="https://github.com/Mathieu94110/Crypto_tracking"
                 link="https://mathieu94110.github.io/Crypto_tracking/"
                 skills={CryptoProjectImgs}
@@ -167,7 +184,7 @@ const projects = () => {
             <motion.div variants={images} class="group relative">
               <Project
                 title="Mon application Spotify"
-                img={SpotifyAppImg}
+                img={IMAGES.spotifyApp}
                 link=""
                 github="https://github.com/Mathieu94110/My_spotify-app"
                 skills={SpotifyProjectImgs}
@@ -176,7 +193,7 @@ const projects = () => {
 
             <motion.div variants={images} class="group relative">
               <Project
-                img={EcoAppImg}
+                img={IMAGES.eco}
                 title="Eco"
                 link=""
                 github="https://github.com/Mathieu94110/Eco"
@@ -185,7 +202,7 @@ const projects = () => {
             </motion.div>
             <motion.div variants={images} class="group relative">
               <Project
-                img={CoctailsAppImg}
+                img={IMAGES.cocktailsApp}
                 title="CocktailsApp"
                 link="http://vps-26aea99b.vps.ovh.net"
                 github="https://github.com/Mathieu94110/CocktailsApp"
@@ -195,7 +212,7 @@ const projects = () => {
 
             <motion.div variants={images} class="group relative">
               <Project
-                img={AirBnbCloneImg}
+                img={IMAGES.airBnbClone}
                 title="Airbnb Clone"
                 link="https://air-bnb-clone-black.vercel.app/"
                 github="https://github.com/Mathieu94110/AirBnbClone"
@@ -204,7 +221,7 @@ const projects = () => {
             </motion.div>
             <motion.div variants={images} class="group relative">
               <Project
-                img={TwitterCloneImg}
+                img={IMAGES.twitterClone}
                 title="Twitter Clone"
                 link=""
                 github="https://github.com/Mathieu94110/AirBnbClone"

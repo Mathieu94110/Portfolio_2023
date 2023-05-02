@@ -175,8 +175,8 @@ const projects = () => {
               <Project
                 title="CryptoApp"
                 img={IMAGES.cryptoApp}
-                github="https://github.com/Mathieu94110/Crypto_tracking"
-                link="https://mathieu94110.github.io/Crypto_tracking/"
+                github="https://github.com/Mathieu94110/CryptoApp"
+                link="https://crypto-app-omega-ashen.vercel.app/"
                 skills={CryptoProjectImgs}
               />
             </motion.div>

@@ -1,12 +1,12 @@
-import AnimatedText from "@/components/AnimatedText";
-import { GithubIcon, EyeIcon } from "@/components/Icons";
-import Layout from "@/components/Layout";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import IMAGES from "../../public/images";
-import { motion } from "framer-motion";
+import AnimatedText from '@/components/AnimatedText';
+import { GithubIcon, EyeIcon } from '@/components/Icons';
+import Layout from '@/components/Layout';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import IMAGES from '../../public/images';
+import { motion } from 'framer-motion';
 
 const FramerImage = motion(Image);
 
@@ -46,6 +46,16 @@ const cocktailsProjectImgs = [
 const NextsJsCloneProjectsImgs = [
   IMAGES.logoNextJs,
   IMAGES.logoTypescript,
+  IMAGES.logoTailwindCss,
+];
+const reactNativeTypescriptImgs = [
+  IMAGES.reactNativeLogo,
+  IMAGES.logoTypescript,
+];
+const reactNativeTypescriptAndReduxImgs = [
+  IMAGES.reactNativeLogo,
+  IMAGES.logoTypescript,
+  IMAGES.reduxLogo,
   IMAGES.logoTailwindCss,
 ];
 
@@ -226,6 +236,24 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/AirBnbClone"
                 skills={NextsJsCloneProjectsImgs}
+              />
+            </motion.div>
+            <motion.div variants={images} class="group relative">
+              <Project
+                img={IMAGES.ticTacToe}
+                title="TicTacToe"
+                link=""
+                github="https://github.com/Mathieu94110/TIc-Tac-Toe"
+                skills={reactNativeTypescriptImgs}
+              />
+            </motion.div>
+            <motion.div variants={images} class="group relative">
+              <Project
+                img={IMAGES.uberEatsClone}
+                title="Uber Eats Clone"
+                link=""
+                github="https://github.com/Mathieu94110/uber-eats-app"
+                skills={reactNativeTypescriptAndReduxImgs}
               />
             </motion.div>
           </motion.div>

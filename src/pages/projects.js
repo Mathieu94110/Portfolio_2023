@@ -1,12 +1,12 @@
-import AnimatedText from '@/components/AnimatedText';
-import { GithubIcon, EyeIcon } from '@/components/Icons';
-import Layout from '@/components/Layout';
-import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import IMAGES from '../../public/images';
-import { motion } from 'framer-motion';
+import AnimatedText from "@/components/AnimatedText";
+import { GithubIcon, EyeIcon } from "@/components/Icons";
+import Layout from "@/components/Layout";
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import IMAGES from "../../public/images";
+import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
 
@@ -58,7 +58,11 @@ const reactNativeTypescriptAndReduxImgs = [
   IMAGES.reduxLogo,
   IMAGES.logoTailwindCss,
 ];
-
+const reactNativeTypescriptAndFirebase = [
+  IMAGES.reactNativeLogo,
+  IMAGES.logoTypescript,
+  IMAGES.firebase,
+];
 const Project = ({ title, img, link, github, skills }) => {
   return (
     <article className="w-4/6  mx-auto h-auto border border-solid  border-black rounded-2xl">
@@ -254,6 +258,15 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/uber-eats-app"
                 skills={reactNativeTypescriptAndReduxImgs}
+              />
+            </motion.div>
+            <motion.div variants={images} class="group relative">
+              <Project
+                img={IMAGES.tinderApp}
+                title="Uber Eats Clone"
+                link=""
+                github="https://github.com/Mathieu94110/tinderApp"
+                skills={reactNativeTypescriptAndFirebase}
               />
             </motion.div>
           </motion.div>

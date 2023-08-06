@@ -17,7 +17,8 @@ module.exports = {
         primaryDark: "#58E6D9",
       },
       animation: {
-        "spin-slow": "spin 8s linear infinite",
+        spin: "spin 4s linear infinite",
+        reverseSpin: "reverseSpin 4s linear infinite",
       },
       backgroundImage: {
         circularLight:
@@ -48,6 +49,16 @@ module.exports = {
         "3xl": "0 15px 15px 1px rgba(80,230,217, 0.4)",
       },
       visibility: ["group-hover"],
+      keyframes: {
+        spin: {
+          "0%": { transform: "translate(-50%, -50%) rotate(0deg)" },
+          "100%": { transform: "translate(-50%, -50%) rotate(360deg)" },
+        },
+        reverseSpin: {
+          "0%": { transform: "translate(-50%, -50%) rotate(360deg)" },
+          "100%": { transform: "translate(-50%, -50%) rotate(0deg)" },
+        },
+      },
     },
     screens: {
       "3xl": { min: "1536px" },

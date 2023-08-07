@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import IMAGES from "../../public/images";
 import { motion } from "framer-motion";
 
@@ -62,10 +62,36 @@ const reactNativeTypescriptAndFirebase = [
   IMAGES.logoTypescript,
   IMAGES.firebase,
 ];
-const Project = ({ title, img, type, description, link, github, skills }) => {
+
+const Project = ({
+  title,
+  img,
+  type,
+  description,
+  link,
+  github,
+  skills,
+  index,
+}) => {
+  let projectCardList;
+  let cardContentList;
+  useEffect(() => {
+    cardContentList = document.getElementsByClassName("project-content");
+    projectCardList = document.getElementsByClassName("project-card");
+  }, []);
+
+  // const toggleCardContent = (index) => {
+  //   // console.log("content =", cardContentList[index], "index =", index);
+  //   console.log(cardContentList[index].classList);
+  //   console.log(projectCardList[index].classList);
+  //   cardContentList[index].classList.remove("translate-y-[0px]");
+  //   cardContentList[index].classList.add("translate-y-[145px]");
+  //   projectCardList[index].classList.remove("hover:h-[600px]");
+  // };
+
   return (
     <article>
-      <div className="group relative h-[190px] w-[350px] bg-[#333] duration-500 hover:h-[600px] ">
+      <div className="project-card group relative h-[190px] w-[320px] bg-[#333] duration-500 hover:h-[600px] ">
         <div className="overflow-hidden absolute inset-0 bg-black before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:translate-x-[-50%] before:translate-y-[-50%] before:h-[120px] before:w-[600px] before:bg-gradient-to-r before:from-transparent before:via-[#45f3ff] before:via-[#45f3ff] before:via-[#45f3ff] before:to-transparent before:animate-spin after:content-[''] after:absolute after:inset-0.5 after:bg-[#292929]"></div>
         <div className="absolute top-[-50px] left-1/2 w-[150px] h-[150px] bg-black  duration-500 overflow-hidden z-10 translate-x-[-50%] group-hover:w-[200px]  group-hover:h-[200px] before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:translate-x-[-50%] before:translate-y-[-50%] before:w-[350px] before:h-[100px] before:bg-gradient-to-r before:from-transparent before:via-[#ff3c7b] before:via-[#ff3c7b] before:via-[#ff3c7b] before:to-transparent before:animate-reverseSpin after:content-[''] after:absolute after:inset-0.5 after:bg-[#292929]">
           <FramerImage
@@ -73,15 +99,19 @@ const Project = ({ title, img, type, description, link, github, skills }) => {
             alt={title}
             className="absolute top-2.5 left-2.5 z-[1] w-[calc(100%_-_20px)] h-[calc(100%_-_20px)]"
           />
+          {/* <FaPlusCircle
+            className="absolute top-[62px] left-[58px] w-9 h-9 text-[#45f3ff] z-10 group-hover:left-[84px] group-hover:top-[80px]"
+             onClick={() => switchCardContent(index)}
+          /> */}
         </div>
         <div className="absolute w-full h-full flex justify-center items-end overflow-hidden">
-          <div className="p-[40px] text-center w-full duration-500 translate-y-[145px] group-hover:translate-y-[0px]">
+          <div className="project-content p-[40px] absolute top-[-82px] text-center w-full duration-500 translate-y-[145px] group-hover:translate-y-[0px] group-hover:static">
             <h2 className="text-xl font-semibold text-[#45f3ff] mb-8">
               {title}
               <br></br>
               <span className="text-sm font-medium text-white">{type}</span>
             </h2>
-            <div className="flex justify-between my-5">
+            <div className="flex justify-between my-5 mx-0">
               <div>
                 <ul
                   role="list"
@@ -92,7 +122,7 @@ const Project = ({ title, img, type, description, link, github, skills }) => {
                   </span>
                   {skills?.map((skill, index) => (
                     <li
-                      className="w-9 h-9 mx-2 flex items-center justify-center"
+                      className="w-8 h-8 mx-2 flex items-center justify-center"
                       key={index}
                     >
                       <Image src={skill} alt={skill} />
@@ -104,7 +134,7 @@ const Project = ({ title, img, type, description, link, github, skills }) => {
                     Description
                   </span>
 
-                  <span className="text-sm text-white font-base text-left">
+                  <span className="text-sm text-white font-base text-left pr-2">
                     {description}
                   </span>
                 </div>
@@ -157,6 +187,7 @@ const images = {
     transition: {
       duration: 1,
     },
+    margin: "auto",
   },
 };
 
@@ -174,7 +205,7 @@ const projects = () => {
         <Layout>
           <AnimatedText
             text="Découvrez certains de mes projets!"
-            className="mb-16 3xl:!text-6xl 2xl:mb-12 2xl:!text-4xl sm:mb-8 sm:!text-lg"
+            className="mb-32 3xl:!text-6xl 2xl:mb-18 2xl:!text-4xl sm:!text-lg"
           />
 
           <motion.div
@@ -192,9 +223,10 @@ const projects = () => {
                 link="https://mathieu94110.github.io/Hello-world-project/"
                 github="https://github.com/Mathieu94110/Hello-world-project"
                 skills={HelloWorldImgs}
+                index={0}
               />
             </motion.div>
-            <motion.div variants={images} class="group relative">
+            <motion.div variants={images} className="group relative">
               <Project
                 title="Template responsive go to the moon"
                 type="Projet d'intégration"
@@ -203,9 +235,10 @@ const projects = () => {
                 link="https://mathieu94110.github.io/Go-to-the-moon-project/"
                 github="https://github.com/Mathieu94110/Go-to-the-moon-project"
                 skills={goToTheMoonAndTravelAgencyImgs}
+                index={1}
               />
             </motion.div>
-            <motion.div variants={images} class="group relative">
+            <motion.div variants={images} className="group relative">
               <Project
                 title="Template responsive travel agency"
                 type="Projet d'intégration"
@@ -214,56 +247,61 @@ const projects = () => {
                 link="https://mathieu94110.github.io/Travel-agency-project/"
                 github="https://github.com/Mathieu94110/Travel-agency-project"
                 skills={goToTheMoonAndTravelAgencyImgs}
+                index={2}
               />
             </motion.div>
-            <motion.div variants={images} class="group relative">
+            <motion.div variants={images} className="group relative">
               <Project
-                title="CryptoApp"
+                title="Mon application de cryptomonnaies"
                 type="Spa en React/Redux/Typescript"
                 description="Projet dédié au suivi et à l'évolution des crypto-monnaies recourant aux services de l'api coin-gecko"
                 img={IMAGES.cryptoApp}
                 github="https://github.com/Mathieu94110/CryptoApp"
                 link="https://crypto-app-omega-ashen.vercel.app/"
                 skills={CryptoProjectImgs}
+                index={3}
               />
             </motion.div>
 
-            <motion.div variants={images} class="group relative">
+            <motion.div variants={images} className="group relative">
               <Project
                 title="Mon application Spotify"
                 type="Spa en React/Redux/Typescript"
-                description="Clone de l'application Spotify recourant aux services de l'api de spotify, offrant diverses fonctionnalités (consultation de l'historique des écoutes, recherche de titre, création de playlists etc ...) "
+                description="Clone de l'application Spotify recourant aux services de l'api de spotify, offrant diverses fonctionnalités ( historique des écoutes, recherche/création de playlists etc ...) "
                 img={IMAGES.spotifyApp}
                 link=""
                 github="https://github.com/Mathieu94110/My_spotify-app"
                 skills={SpotifyProjectImgs}
+                index={4}
               />
             </motion.div>
 
-            <motion.div variants={images} class="group relative">
+            <motion.div variants={images} className="group relative">
               <Project
                 img={IMAGES.eco}
                 title="Eco"
-                type="Spa en Vue/VueX/Typescript/NodeJs/MongoDb"
+                type="Spa en Vue/VueX/Typescript/Node/MongoDb"
                 description="Projet fullstack avec tests d'intération et e2e, permettant de se créer et de se connecter à un compte utilisateur, de modifier les informations du profil, de rechercher des articles par catégories, système de favoris etc..."
                 link=""
                 github="https://github.com/Mathieu94110/Eco"
                 skills={EcoProjectImgs}
+                index={5}
               />
             </motion.div>
-            <motion.div variants={images} class="group relative">
+            <motion.div variants={images} className="group relative">
               <Project
                 img={IMAGES.cocktailsApp}
                 title="CocktailsApp"
-                type="Spa en React/Typescript/NodeJs/MongoDb"
+                type="Spa en React/Typescript/Node/MongoDb"
                 description="Projet fullstack avec tests d'intération et e2e, fonctionnant grâce à l'api Context de React et le système de hook (useReducer), offrant notamment un système de recherche multi-filtre"
                 link="http://vps-26aea99b.vps.ovh.net"
                 github="https://github.com/Mathieu94110/CocktailsApp"
                 skills={cocktailsProjectImgs}
+                index={6}
               />
             </motion.div>
 
-            <motion.div variants={images} class="group relative">
+            <motion.div variants={images} className="group relative">
               <Project
                 img={IMAGES.airBnbClone}
                 title="Airbnb Clone"
@@ -272,9 +310,10 @@ const projects = () => {
                 link="https://air-bnb-clone-black.vercel.app/"
                 github="https://github.com/Mathieu94110/AirBnbClone"
                 skills={NextsJsCloneProjectsImgs}
+                index={7}
               />
             </motion.div>
-            <motion.div variants={images} class="group relative">
+            <motion.div variants={images} className="group relative">
               <Project
                 img={IMAGES.twitterClone}
                 title="Twitter Clone"
@@ -283,9 +322,10 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/AirBnbClone"
                 skills={NextsJsCloneProjectsImgs}
+                index={8}
               />
             </motion.div>
-            <motion.div variants={images} class="group relative">
+            <motion.div variants={images} className="group relative">
               <Project
                 img={IMAGES.ticTacToe}
                 title="TicTacToe"
@@ -294,28 +334,31 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/TIc-Tac-Toe"
                 skills={reactNativeTypescriptImgs}
+                index={9}
               />
             </motion.div>
-            <motion.div variants={images} class="group relative">
+            <motion.div variants={images} className="group relative">
               <Project
                 img={IMAGES.uberEatsClone}
                 title="Uber Eats Clone"
                 type="Projet React Native/Firebase/Redux/Typescript"
-                description="Clone de l'application"
+                description="Clone de l'application Uber Eats, permet de rechercher un restaurant, d'obtenir des informations relatives à cet établissement et de passer des commandes"
                 link=""
                 github="https://github.com/Mathieu94110/uber-eats-app"
                 skills={reactNativeTypescriptAndReduxImgs}
+                index={10}
               />
             </motion.div>
-            <motion.div variants={images} class="group relative">
+            <motion.div variants={images} className="group relative">
               <Project
                 img={IMAGES.tinderApp}
-                title="Uber Eats Clone"
+                title="Tinder clone"
                 type="Projet React Native/Firebase/Typescript"
-                description="Projet avec système d'authentification de Google, permettant de consulter les profils disponibles, de matcher avec eux, et si le match est réciproque d'échanger avec cette personne sur un tchat"
+                description="Avec système d'authentification de Google, permet de consulter les profils disponibles, de matcher avec eux, et si le match est réciproque d'échanger avec cette personne sur un tchat"
                 link=""
                 github="https://github.com/Mathieu94110/tinderApp"
                 skills={reactNativeTypescriptAndFirebase}
+                index={11}
               />
             </motion.div>
           </motion.div>

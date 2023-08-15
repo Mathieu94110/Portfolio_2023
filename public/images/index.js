@@ -26,5 +26,6 @@ const IMAGES = {
   uberEatsClone: require("./uber-eats-clone.png").default,
   firebase: require("./firebase.png").default,
   tinderApp: require("./tinderApp.png"),
+  amazonApp: require("./amazon-clone.png"),
 };
 export default IMAGES;

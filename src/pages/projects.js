@@ -3,7 +3,6 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect } from "react";
 import IMAGES from "../../public/images";
 import { motion } from "framer-motion";
 
@@ -73,40 +72,20 @@ const Project = ({
   skills,
   index,
 }) => {
-  let projectCardList;
-  let cardContentList;
-  useEffect(() => {
-    cardContentList = document.getElementsByClassName("project-content");
-    projectCardList = document.getElementsByClassName("project-card");
-  }, []);
-
-  // const toggleCardContent = (index) => {
-  //   // console.log("content =", cardContentList[index], "index =", index);
-  //   console.log(cardContentList[index].classList);
-  //   console.log(projectCardList[index].classList);
-  //   cardContentList[index].classList.remove("translate-y-[0px]");
-  //   cardContentList[index].classList.add("translate-y-[145px]");
-  //   projectCardList[index].classList.remove("hover:h-[600px]");
-  // };
-
   return (
     <article>
-      <div className="project-card group relative h-[190px] w-[320px] bg-[#333] duration-500 hover:h-[600px] ">
-        <div className="overflow-hidden absolute inset-0 bg-black before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:translate-x-[-50%] before:translate-y-[-50%] before:h-[120px] before:w-[600px] before:bg-gradient-to-r before:from-transparent before:via-[#45f3ff] before:via-[#45f3ff] before:via-[#45f3ff] before:to-transparent before:animate-spin after:content-[''] after:absolute after:inset-0.5 after:bg-[#292929]"></div>
-        <div className="absolute top-[-50px] left-1/2 w-[150px] h-[150px] bg-black  duration-500 overflow-hidden z-10 translate-x-[-50%] group-hover:w-[200px]  group-hover:h-[200px] before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:translate-x-[-50%] before:translate-y-[-50%] before:w-[350px] before:h-[100px] before:bg-gradient-to-r before:from-transparent before:via-[#ff3c7b] before:via-[#ff3c7b] before:via-[#ff3c7b] before:to-transparent before:animate-reverseSpin after:content-[''] after:absolute after:inset-0.5 after:bg-[#292929]">
+      <div className="project-card group relative h-[190px] w-[320px] bg-[#333] duration-500 hover:h-[540px] ">
+        <div className="overflow-hidden absolute inset-0 bg-black  before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:translate-x-[-50%] before:translate-y-[-50%] before:h-[120px] before:w-[600px] before:bg-gradient-to-r before:from-transparent before:via-[#45f3ff]  before:to-transparent before:animate-spin after:content-[''] after:absolute after:inset-0.5 after:bg-[#292929]"></div>
+        <div className="absolute top-[-50px] group-hover:top-[-100px] left-1/2 w-[150px] h-[150px] bg-black  duration-500 overflow-hidden z-10 translate-x-[-50%] group-hover:w-[200px]  group-hover:h-[200px] before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:translate-x-[-50%] before:translate-y-[-50%] before:w-[350px] before:h-[100px] before:bg-gradient-to-r before:from-transparent  before:via-[#ff3c7b] before:to-transparent before:animate-reverseSpin after:content-[''] after:absolute after:inset-0.5 after:bg-[#292929]">
           <FramerImage
             src={img}
             alt={title}
-            className="absolute top-2.5 left-2.5 z-[1] w-[calc(100%_-_20px)] h-[calc(100%_-_20px)]"
+            className="absolute top-2.5 left-2.5 z-[1] w-[calc(100%_-_20px)] h-[calc(100%_-_20px)] "
           />
-          {/* <FaPlusCircle
-            className="absolute top-[62px] left-[58px] w-9 h-9 text-[#45f3ff] z-10 group-hover:left-[84px] group-hover:top-[80px]"
-             onClick={() => switchCardContent(index)}
-          /> */}
         </div>
         <div className="absolute w-full h-full flex justify-center items-end overflow-hidden">
-          <div className="project-content p-[40px] absolute top-[-82px] text-center w-full duration-500 translate-y-[145px] group-hover:translate-y-[0px] group-hover:static">
-            <h2 className="text-xl font-semibold text-[#45f3ff] mb-8">
+          <div className="project-content py-[40px] px-[20px] absolute top-[-82px] text-center w-full duration-500 translate-y-[145px] group-hover:translate-y-[0px] group-hover:static">
+            <h2 className="text-xl font-semibold text-[#45f3ff] mb-7">
               {title}
               <br></br>
               <span className="text-sm font-medium text-white">{type}</span>
@@ -115,24 +94,28 @@ const Project = ({
               <div>
                 <ul
                   role="list"
-                  className="w-full py-2  h-1/6 flex items-center"
+                  className="w-full pb-2  flex flex-col items-start"
                 >
-                  <span className="text-sm font-semibold text-[#45f3ff]">
+                  <h3 className="text-sm font-semibold text-[#45f3ff]">
                     Stack
+                  </h3>
+                  <span className="h-10 flex justify-center items-center">
+                    <span className="flex flex-row mt-2">
+                      {skills?.map((skill, index) => (
+                        <li
+                          className="w-8 h-8 px-1 items-center justify-center"
+                          key={index}
+                        >
+                          <Image src={skill} alt={skill} />
+                        </li>
+                      ))}
+                    </span>
                   </span>
-                  {skills?.map((skill, index) => (
-                    <li
-                      className="w-8 h-8 mx-2 flex items-center justify-center"
-                      key={index}
-                    >
-                      <Image src={skill} alt={skill} />
-                    </li>
-                  ))}
                 </ul>
-                <div className="flex flex-col justify-between my-5">
-                  <span className="text-sm font-semibold text-[#45f3ff] text-left">
+                <div className="flex flex-col justify-between  mb-5">
+                  <h3 className="text-sm font-semibold text-[#45f3ff] text-left">
                     Description
-                  </span>
+                  </h3>
 
                   <span className="text-sm text-white font-base text-left pr-2">
                     {description}
@@ -212,7 +195,7 @@ const projects = () => {
             variants={variants}
             initial="hidden"
             animate="show"
-            className="grid grid-cols-4 gap-y-24 gap-x-12 2xl:grid-cols-3 xl:grid-cols-2 sm:grid-cols-1"
+            className="grid grid-cols-4 gap-y-28 gap-x-12 2xl:grid-cols-3 xl:grid-cols-2 sm:grid-cols-1"
           >
             <motion.div variants={images}>
               <Project
@@ -318,7 +301,7 @@ const projects = () => {
                 img={IMAGES.twitterClone}
                 title="Twitter Clone"
                 type="Projet NextJS"
-                description="Clone de l'application Twitter, en NextJs/Typescript/TailwindCss permettant de s'authentifier avec NextAuth et Twitter et de créer des tweets"
+                description="Clone de l'application Twitter, en NextJs/Typescript/TailwindCss permettant de s'authentifier avec NextAuth et Twitter et de tweeter"
                 link=""
                 github="https://github.com/Mathieu94110/AirBnbClone"
                 skills={NextsJsCloneProjectsImgs}
@@ -354,9 +337,21 @@ const projects = () => {
                 img={IMAGES.tinderApp}
                 title="Tinder clone"
                 type="Projet React Native/Firebase/Typescript"
-                description="Avec système d'authentification de Google, permet de consulter les profils disponibles, de matcher avec eux, et si le match est réciproque d'échanger avec cette personne sur un tchat"
+                description="Avec système d'authentification de Google par mail et mot de passe, permet de consulter les profils disponibles, de matcher avec eux, et si le match est réciproque d'échanger avec la personne sur un tchat"
                 link=""
                 github="https://github.com/Mathieu94110/tinderApp"
+                skills={reactNativeTypescriptAndFirebase}
+                index={11}
+              />
+            </motion.div>
+            <motion.div variants={images} className="group relative">
+              <Project
+                img={IMAGES.amazonApp}
+                title="Amazon clone"
+                type="Projet React Native/GoogleAuthentication/Typescript"
+                description="Avec l'authentification par gmail de Google, offre un système de navigation avec bottom tap bar et de communication des composants avec context provider et reducers"
+                link=""
+                github="https://github.com/Mathieu94110/AmazonClone"
                 skills={reactNativeTypescriptAndFirebase}
                 index={11}
               />

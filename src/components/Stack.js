@@ -6,6 +6,7 @@ const stackImgs = [
   IMAGES.logoHtmlCss,
   IMAGES.logoJavascript,
   IMAGES.logoReact,
+  IMAGES.reactNativeLogo,
   IMAGES.logoNextJs,
   IMAGES.logoVue,
   IMAGES.logoTypescript,

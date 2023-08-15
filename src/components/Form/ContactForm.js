@@ -50,19 +50,19 @@ export default function ContactForm() {
   return (
     <>
       <div className="w-full flex justify-evenly lg:block">
-        <div className="w-1/3 place-items: center flex flex-col h-full justify-center items-start lg:h-auto lg:justify-center lg:w-auto lg:mx-auto lg:w-1/2 lg:items-center sm:mb-4">
-          <h2 className="my-10 text-lg font-bold uppercase text-dark/75 dark:text-light/75 md:my-6 sm:my-4 sm:text-base sm:font-medium">
+        <div className="w-1/3 place-items: center flex flex-col h-full justify-center items-start lg:h-auto lg:justify-center lg:w-auto lg:mx-auto lg:w-1/2 lg:items-center lg:mb-6 md:mb-0">
+          <h2 className="my-10 text-lg font-bold uppercase text-dark/75 dark:text-light/75 lg:my-4 sm:text-base sm:font-medium">
             Coordonnées
           </h2>
           <div className="3xl:!text-2xl 2xl:!text-xl sm:!text-base  md:font-medium">
-            <div className="flex items-center md:my-6 sm:my-4  my-10">
+            <div className="flex items-center my-10 md:my-6 lg:my-4">
               <>
                 <PhoneIcon /> <span className="ml-4">0615218101</span>
               </>{" "}
             </div>
           </div>
 
-          <div className="my-10 3xl:!text-2xl 2xl:!text-xl sm:!text-base md:my-6 sm:my-4 md:font-medium">
+          <div className="my-10 3xl:!text-2xl 2xl:!text-xl sm:!text-base lg:my-4 md:font-medium">
             <div className="flex items-center ">
               <>
                 <EmailIcon /> <span className="ml-4">me94110@gmail.com</span>
@@ -77,7 +77,7 @@ export default function ContactForm() {
             onSubmit={handleSubmit(onSubmit)}
             noValidate
           >
-            <div className="h-28 my-6 flex flex-col flex-1 w-full relative">
+            <div className="h-28 flex flex-col flex-1 w-full relative">
               <input
                 type="text"
                 name="name"
@@ -92,7 +92,7 @@ export default function ContactForm() {
                       "La valeur du champs ne doit pas dépasser 30 caractères",
                   },
                 })}
-                className="focus:border-2 focus:border-black focus:mb-4 focus:block focus:w-full focus:p-4 focus:rounded focus:outline-none focus:text-base border border-black mb-4 block w-full p-4 rounded duration-150 ease outline-none text-base"
+                className="focus:border-2 focus:border-black focus:block focus:w-full focus:p-4 focus:rounded focus:outline-none focus:text-base border border-black block w-full p-4 rounded duration-150 ease outline-none text-base"
                 placeholder="Nom"
               />
 
@@ -105,7 +105,7 @@ export default function ContactForm() {
               )}
             </div>
 
-            <div className="my-6 flex flex-col flex-1 w-full">
+            <div className=" flex flex-col flex-1 w-full">
               <input
                 type="email"
                 name="email"
@@ -114,7 +114,7 @@ export default function ContactForm() {
                   pattern:
                     /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
                 })}
-                className="focus:border-2  focus:mb-4 focus:block focus:w-full focus:p-4 focus:rounded focus:outline-none focus:text-base border  border-black mb-4 block w-full p-4 rounded duration-150 ease outline-none text-base"
+                className="focus:border-2 focus:block focus:w-full focus:p-4 focus:rounded focus:outline-none focus:text-base border  border-black mb-4 block w-full p-4 rounded duration-150 ease outline-none text-base"
                 placeholder="Email"
               ></input>
               {errors.email ? (
@@ -126,13 +126,13 @@ export default function ContactForm() {
               )}
             </div>
 
-            <div className="h-1/2 flex flex-col flex-1 w-full relative my-6">
+            <div className="h-1/2 flex flex-col flex-1 w-full relative">
               <textarea
                 name="message"
                 {...register("message", {
                   required: true,
                 })}
-                className="h-32 w-full mb-4 block focus:border-2 p-4 rounded transition duration-150 ease outline-none text-base focus:text-base border border-black"
+                className="h-32 w-full  block focus:border-2 p-4 rounded transition duration-150 ease outline-none text-base focus:text-base border border-black"
                 placeholder="Message"
               ></textarea>
               {errors.message ? (

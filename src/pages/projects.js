@@ -235,6 +235,18 @@ const projects = () => {
             </motion.div>
             <motion.div variants={images} className="group relative">
               <Project
+                img={IMAGES.eco}
+                title="Eco"
+                type="Spa en Vue/VueX/Typescript/Node/MongoDb"
+                description="Projet fullstack avec tests d'intération et e2e, permettant de se créer et de se connecter à un compte utilisateur, de modifier les informations du profil, de rechercher des articles par catégories, système de favoris etc..."
+                link=""
+                github="https://github.com/Mathieu94110/Eco"
+                skills={EcoProjectImgs}
+                index={5}
+              />
+            </motion.div>
+            <motion.div variants={images} className="group relative">
+              <Project
                 title="Mon application de cryptomonnaies"
                 type="Spa en React/Redux/Typescript"
                 description="Projet dédié au suivi et à l'évolution des crypto-monnaies recourant aux services de l'api coin-gecko"
@@ -249,26 +261,13 @@ const projects = () => {
             <motion.div variants={images} className="group relative">
               <Project
                 title="Mon application Spotify"
-                type="Spa en React/Redux/Typescript"
+                type="Spa en React/Redux"
                 description="Clone de l'application Spotify recourant aux services de l'api de spotify, offrant diverses fonctionnalités ( historique des écoutes, recherche/création de playlists etc ...) "
                 img={IMAGES.spotifyApp}
-                link=""
+                link="https://my-spotify-app-theta.vercel.app/"
                 github="https://github.com/Mathieu94110/My_spotify-app"
                 skills={SpotifyProjectImgs}
                 index={4}
-              />
-            </motion.div>
-
-            <motion.div variants={images} className="group relative">
-              <Project
-                img={IMAGES.eco}
-                title="Eco"
-                type="Spa en Vue/VueX/Typescript/Node/MongoDb"
-                description="Projet fullstack avec tests d'intération et e2e, permettant de se créer et de se connecter à un compte utilisateur, de modifier les informations du profil, de rechercher des articles par catégories, système de favoris etc..."
-                link=""
-                github="https://github.com/Mathieu94110/Eco"
-                skills={EcoProjectImgs}
-                index={5}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">

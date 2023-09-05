@@ -25,6 +25,8 @@ const SpotifyProjectImgs = [
   IMAGES.logoTypescript,
   IMAGES.spotifyLogo,
   IMAGES.logoSass,
+  IMAGES.testingLibraryLogo,
+  IMAGES.jestLogo,
 ];
 const EcoProjectImgs = [
   IMAGES.logoVue,
@@ -32,6 +34,7 @@ const EcoProjectImgs = [
   IMAGES.logoNodeJs,
   IMAGES.logoMongoDb,
   IMAGES.logoSass,
+  IMAGES.cypressLogo,
 ];
 const cocktailsProjectImgs = [
   IMAGES.logoReact,
@@ -39,6 +42,9 @@ const cocktailsProjectImgs = [
   IMAGES.logoNodeJs,
   IMAGES.logoMongoDb,
   IMAGES.logoSass,
+  IMAGES.testingLibraryLogo,
+  IMAGES.jestLogo,
+  IMAGES.cypressLogo,
 ];
 
 const NextsJsCloneProjectsImgs = [

@@ -12,9 +12,9 @@ const IMAGES = {
   helloWorld: require("./hello-world.png").default,
   goToTheMoon: require("./go-to-the-moon.png").default,
   travelAgency: require("./travel-agency.png").default,
-  cryptoApp: require("./crypto-app.png").default,
+  cryptoApp: require("./crypto-app-logo.png").default,
   spotifyLogo: require("./spotify.png").default,
-  spotifyApp: require("./spotify.jpg").default,
+  spotifyApp: require("./spotify-logo.png").default,
   eco: require("./eco.png").default,
   cocktailsApp: require("./cocktails-app.png").default,
   airBnbClone: require("./airbnb-clone.png").default,
@@ -27,5 +27,8 @@ const IMAGES = {
   firebase: require("./firebase.png").default,
   tinderApp: require("./tinderApp.png"),
   amazonApp: require("./amazon-clone.png"),
+  jestLogo: require("./jest.png"),
+  testingLibraryLogo: require("./react-testing-library.jpg"),
+  cypressLogo: require("./cypress.png"),
 };
 export default IMAGES;

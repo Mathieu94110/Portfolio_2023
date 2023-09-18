@@ -22,7 +22,6 @@ const CryptoProjectImgs = [
 ];
 const SpotifyProjectImgs = [
   IMAGES.logoReact,
-  IMAGES.logoTypescript,
   IMAGES.spotifyLogo,
   IMAGES.logoSass,
   IMAGES.testingLibraryLogo,
@@ -51,6 +50,11 @@ const NextsJsCloneProjectsImgs = [
   IMAGES.logoNextJs,
   IMAGES.logoTypescript,
   IMAGES.logoTailwindCss,
+];
+const NextsJsMovieAppImgs = [
+  IMAGES.logoNextJs,
+  IMAGES.logoTypescript,
+  IMAGES.logoSass,
 ];
 const reactNativeTypescriptImgs = [
   IMAGES.reactNativeLogo,
@@ -248,7 +252,7 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/Eco"
                 skills={EcoProjectImgs}
-                index={5}
+                index={3}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">
@@ -260,7 +264,7 @@ const projects = () => {
                 github="https://github.com/Mathieu94110/CryptoApp"
                 link="https://crypto-app-omega-ashen.vercel.app/"
                 skills={CryptoProjectImgs}
-                index={3}
+                index={4}
               />
             </motion.div>
 
@@ -273,7 +277,7 @@ const projects = () => {
                 link="https://my-spotify-app-theta.vercel.app/"
                 github="https://github.com/Mathieu94110/My_spotify-app"
                 skills={SpotifyProjectImgs}
-                index={4}
+                index={5}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">
@@ -315,6 +319,18 @@ const projects = () => {
             </motion.div>
             <motion.div variants={images} className="group relative">
               <Project
+                img={IMAGES.movieApp}
+                title="MovieApp"
+                type="Projet NextJS"
+                description="Projet movie application, en NextJs/Typescript permettant de rechercher un film et d'en afficher les détails avec un système de traduction, de suggestion, et de recherche par filtre"
+                link=""
+                github="https://github.com/Mathieu94110/MovieApp"
+                skills={NextsJsMovieAppImgs}
+                index={9}
+              />
+            </motion.div>
+            <motion.div variants={images} className="group relative">
+              <Project
                 img={IMAGES.ticTacToe}
                 title="TicTacToe"
                 type="Projet React Native"
@@ -322,7 +338,7 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/TIc-Tac-Toe"
                 skills={reactNativeTypescriptImgs}
-                index={9}
+                index={10}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">
@@ -334,7 +350,7 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/uber-eats-app"
                 skills={reactNativeTypescriptAndReduxImgs}
-                index={10}
+                index={11}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">
@@ -346,7 +362,7 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/tinderApp"
                 skills={reactNativeTypescriptAndFirebase}
-                index={11}
+                index={12}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">
@@ -358,7 +374,7 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/AmazonClone"
                 skills={reactNativeTypescriptAndFirebase}
-                index={11}
+                index={13}
               />
             </motion.div>
           </motion.div>

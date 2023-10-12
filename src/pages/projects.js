@@ -40,7 +40,6 @@ const fullStackReactExpressProjectsImgs = [
   IMAGES.logoTypescript,
   IMAGES.logoNodeJs,
   IMAGES.logoMongoDb,
-  IMAGES.logoSass,
   IMAGES.testingLibraryLogo,
   IMAGES.jestLogo,
   IMAGES.cypressLogo,
@@ -84,7 +83,7 @@ const Project = ({
 }) => {
   return (
     <article>
-      <div className="project-card group relative h-[190px] w-[320px] bg-[#333] duration-500 hover:h-[540px] ">
+      <div className="project-card group relative h-[190px] w-[320px] xs:w-[232px] bg-[#333] duration-500 hover:h-[540px] ">
         <div className="overflow-hidden absolute inset-0 bg-black  before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:translate-x-[-50%] before:translate-y-[-50%] before:h-[120px] before:w-[600px] before:bg-gradient-to-r before:from-transparent before:via-[#45f3ff]  before:to-transparent before:animate-spin after:content-[''] after:absolute after:inset-0.5 after:bg-[#292929]"></div>
         <div className="absolute top-[-50px] group-hover:top-[-100px] left-1/2 w-[150px] h-[150px] bg-black  duration-500 overflow-hidden z-10 translate-x-[-50%] group-hover:w-[200px]  group-hover:h-[200px] before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:translate-x-[-50%] before:translate-y-[-50%] before:w-[350px] before:h-[100px] before:bg-gradient-to-r before:from-transparent  before:via-[#ff3c7b] before:to-transparent before:animate-reverseSpin after:content-[''] after:absolute after:inset-0.5 after:bg-[#292929]">
           <FramerImage
@@ -94,11 +93,13 @@ const Project = ({
           />
         </div>
         <div className="absolute w-full h-full flex justify-center items-end overflow-hidden">
-          <div className="project-content py-[40px] px-[20px] absolute top-[-82px] text-center w-full duration-500 translate-y-[145px] group-hover:translate-y-[0px] group-hover:static">
-            <h2 className="text-xl font-semibold text-[#45f3ff] mb-7">
+          <div className="project-content py-[40px] px-[20px] xs:pb-[30px] xs:px-[10px] absolute top-[-82px] text-center w-full duration-500 translate-y-[145px] group-hover:translate-y-[0px] group-hover:static">
+            <h2 className="text-xl xs:text-lg font-semibold text-[#45f3ff] mb-7">
               {title}
               <br></br>
-              <span className="text-sm font-medium text-white">{type}</span>
+              <span className="text-sm font-medium text-white xs:text-xs  xs:break-all">
+                {type}
+              </span>
             </h2>
             <div className="flex justify-between my-5 mx-0">
               <div>
@@ -127,7 +128,7 @@ const Project = ({
                     Description
                   </h3>
 
-                  <span className="text-sm text-white font-base text-left pr-2">
+                  <span className="text-sm xs:text-xs text-white font-base text-left pr-2  xs:break-all">
                     {description}
                   </span>
                 </div>
@@ -137,7 +138,7 @@ const Project = ({
               <Link
                 href={github}
                 target="_blank"
-                className="py-1 px-[15px] opacity-80 border-none outline-none rounded-md text-base font-medium bg-white text-[#222] cursor-pointer hover:opacity-100"
+                className="py-1 px-[15px] xs:px-[4px] xs:text-sm opacity-80 border-none outline-none rounded-md text-base font-medium bg-white text-[#222] cursor-pointer hover:opacity-100"
               >
                 Github
               </Link>
@@ -145,7 +146,7 @@ const Project = ({
                 <Link
                   href={link}
                   target="_blank"
-                  className="py-1 px-[15px] opacity-80 border-none outline-none rounded-md text-base font-medium bg-[#45f3ff] text-[#222] cursor-pointer hover:opacity-100"
+                  className="py-1 px-[15px] xs:px-[4px] xs:text-sm opacity-80 border-none outline-none rounded-md text-base font-medium  bg-[#45f3ff] text-[#222] cursor-pointer hover:opacity-100"
                 >
                   Démonstration
                 </Link>
@@ -248,7 +249,7 @@ const projects = () => {
                 img={IMAGES.eco}
                 title="Eco"
                 type="Spa en Vue/VueX/Typescript/Node/MongoDb"
-                description="Projet fullstack avec tests d'intération et e2e, permettant de se créer et de se connecter à un compte utilisateur, de modifier les informations du profil, de rechercher des articles par catégories, système de favoris etc..."
+                description="Projet fullstack avec tests d'intération et e2e, avec système de création et connection, de modifier les informations du profil, de rechercher des articles par catégories, favoris etc..."
                 link=""
                 github="https://github.com/Mathieu94110/Eco"
                 skills={EcoProjectImgs}

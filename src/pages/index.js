@@ -46,8 +46,7 @@ export default function Home() {
                 de Javascript, React, NextJs et React Native.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
-                have to fixe issue on cv downloading !{" "}
-                <Link
+                {/* have to fixe issue on cv downloading ! <Link
                   href="/cv-mathieu-enault.pdf"
                   target={"_blank"}
                   className="flex items-center bg-dark text-light p-2.5 px-6
@@ -59,7 +58,8 @@ export default function Home() {
                   download={true}
                 >
                   Cv <LinkArrow className={"w-6 ml-1"} />
-                </Link>
+                </Link> 
+                */}
                 <Link
                   href="mailto:enault.mathieu2@gmail.com"
                   target={"_blank"}

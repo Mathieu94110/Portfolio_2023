@@ -34,7 +34,7 @@ export default function Home() {
             </div>
             <div className="w-2/3 mx-8 flex flex-col items-center self-center lg:w-full lg:text-center sm:pr-0">
               <AnimatedText
-                text="Développeur front-end ReactJs/NextJs/React Native en recherche d'emploi"
+                text="Développeur front-end ReactJs en recherche d'emploi"
                 className="!text-6xl !text-left 
                 2xl:!text-4xl lg:!text-center lg:!text=3xl md:!text-3xl sm:!text-2xl
                 "
@@ -46,7 +46,8 @@ export default function Home() {
                 de Javascript, React, NextJs et React Native.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
-                {/* have to fixe issue on cv downloading ! <Link
+                have to fixe issue on cv downloading !{" "}
+                <Link
                   href="/cv-mathieu-enault.pdf"
                   target={"_blank"}
                   className="flex items-center bg-dark text-light p-2.5 px-6
@@ -58,8 +59,7 @@ export default function Home() {
                   download={true}
                 >
                   Cv <LinkArrow className={"w-6 ml-1"} />
-                </Link> 
-                */}
+                </Link>
                 <Link
                   href="mailto:enault.mathieu2@gmail.com"
                   target={"_blank"}

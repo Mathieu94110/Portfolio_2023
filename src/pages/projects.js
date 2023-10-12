@@ -35,7 +35,7 @@ const EcoProjectImgs = [
   IMAGES.logoSass,
   IMAGES.cypressLogo,
 ];
-const cocktailsProjectImgs = [
+const fullStackReactExpressProjectsImgs = [
   IMAGES.logoReact,
   IMAGES.logoTypescript,
   IMAGES.logoNodeJs,
@@ -288,8 +288,20 @@ const projects = () => {
                 description="Projet fullstack avec tests d'intération et e2e, fonctionnant grâce à l'api Context de React et le système de hook (useReducer), offrant notamment un système de recherche multi-filtre"
                 link="http://vps-26aea99b.vps.ovh.net"
                 github="https://github.com/Mathieu94110/CocktailsApp"
-                skills={cocktailsProjectImgs}
+                skills={fullStackReactExpressProjectsImgs}
                 index={6}
+              />
+            </motion.div>
+            <motion.div variants={images} className="group relative">
+              <Project
+                img={IMAGES.reactAmazonClone}
+                title="Amazon clone"
+                type="Spa en React/Typescript/Node/MongoDb"
+                description="Projet fullstack React/Typescript/ExpressJs/MongoDb sur le model d'Amazon, fonctionnant grâce à l'api Context de React et offrant des fonctionnalités avancées"
+                link="https://react-amazon-clone-xi.vercel.app/"
+                github="https://github.com/Mathieu94110/ReactAmazonClone"
+                skills={fullStackReactExpressProjectsImgs}
+                index={7}
               />
             </motion.div>
 
@@ -302,7 +314,7 @@ const projects = () => {
                 link="https://air-bnb-clone-black.vercel.app/"
                 github="https://github.com/Mathieu94110/AirBnbClone"
                 skills={NextsJsCloneProjectsImgs}
-                index={7}
+                index={8}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">
@@ -314,7 +326,7 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/AirBnbClone"
                 skills={NextsJsCloneProjectsImgs}
-                index={8}
+                index={9}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">
@@ -326,7 +338,7 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/MovieApp"
                 skills={NextsJsMovieAppImgs}
-                index={9}
+                index={10}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">
@@ -338,7 +350,7 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/TIc-Tac-Toe"
                 skills={reactNativeTypescriptImgs}
-                index={10}
+                index={11}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">
@@ -350,7 +362,7 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/uber-eats-app"
                 skills={reactNativeTypescriptAndReduxImgs}
-                index={11}
+                index={12}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">
@@ -362,7 +374,7 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/tinderApp"
                 skills={reactNativeTypescriptAndFirebase}
-                index={12}
+                index={13}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">
@@ -374,7 +386,7 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/AmazonClone"
                 skills={reactNativeTypescriptAndFirebase}
-                index={13}
+                index={14}
               />
             </motion.div>
           </motion.div>

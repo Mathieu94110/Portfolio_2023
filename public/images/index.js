@@ -31,5 +31,6 @@ const IMAGES = {
   jestLogo: require("./jest.png"),
   testingLibraryLogo: require("./react-testing-library.jpg"),
   cypressLogo: require("./cypress.png"),
+  reactAmazonClone: require("./react-amazon-clone.png"),
 };
 export default IMAGES;

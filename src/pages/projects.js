@@ -275,7 +275,7 @@ const projects = () => {
                 type="Spa en React/Redux"
                 description="Clone de l'application Spotify recourant aux services de l'api de spotify, offrant diverses fonctionnalités ( historique des écoutes, recherche/création de playlists etc ...) "
                 img={IMAGES.spotifyApp}
-                link="https://my-spotify-app-theta.vercel.app/"
+                link=""
                 github="https://github.com/Mathieu94110/My_spotify-app"
                 skills={SpotifyProjectImgs}
                 index={5}

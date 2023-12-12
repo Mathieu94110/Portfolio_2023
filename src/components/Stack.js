@@ -20,16 +20,16 @@ const Stack = () => {
   return (
     <footer
       className="w-full  border-solid border-dark
-    font-medium text-lg dark:text-light dark:border-light sm:text-base
+    font-medium text-lg sm:text-base
     "
     >
-      <h2 className="font-bold text-6xl mb-32 w-full text-center 2xl:!text-4xl lg:!text=3xl  sm:!text-3xl md:mb-16">
+      <h2 className="font-bold text-6xl mb-32 w-full text-center 2xl:!text-4xl lg:!text=3xl  sm:!text-3xl md:mb-16 text-white">
         Outils
       </h2>
       <div className=" mb-32 h-64 flex items-center justify-between lg:flex-col lg:py-6">
         <ul
           role="list"
-          className="w-full h-full bg-transparent rounded-b-2xl rounded-bl-2xl py-2 px-8 sm:px-3 h-1/6 flex flex-wrap items-center justify-evenly xl:justify-start xl:ml-12 xs:ml-8"
+          className="w-full bg-transparent rounded-b-2xl rounded-bl-2xl py-2 px-8 sm:px-3 h-1/6 flex flex-wrap items-center justify-evenly xl:justify-start xl:ml-12 xs:ml-8"
         >
           {stackImgs?.map((stack, index) => (
             <li

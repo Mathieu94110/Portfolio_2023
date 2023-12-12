@@ -51,7 +51,7 @@ export default function ContactForm() {
     <>
       <div className="w-full flex justify-evenly lg:block">
         <div className="w-1/3 place-items: center flex flex-col h-full justify-center items-start lg:h-auto lg:justify-center lg:w-auto lg:mx-auto lg:w-1/2 lg:items-center lg:mb-6 md:mb-0">
-          <h2 className="my-10 text-lg font-bold uppercase text-dark/75 dark:text-light/75 lg:my-4 sm:text-base sm:font-medium">
+          <h2 className="my-10 text-lg font-bold uppercase text-light lg:my-4 sm:text-base sm:font-medium">
             Coordonnées
           </h2>
           <div className="3xl:!text-2xl 2xl:!text-xl sm:!text-base  md:font-medium">
@@ -65,7 +65,8 @@ export default function ContactForm() {
           <div className="my-10 3xl:!text-2xl 2xl:!text-xl sm:!text-base lg:my-4 md:font-medium">
             <div className="flex items-center ">
               <>
-                <EmailIcon /> <span className="ml-4">me94110@gmail.com</span>
+                <EmailIcon />{" "}
+                <span className="ml-4">enault.mathieu2@gmail.com</span>
               </>{" "}
             </div>
           </div>

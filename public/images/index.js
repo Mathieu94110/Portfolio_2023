@@ -28,6 +28,7 @@ const IMAGES = {
   logoSass: require("./sass.png").default,
   logoTailwindCss: require("./tailwindcss.png").default,
   firebase: require("./firebase.png").default,
+  chatApp: require("./chatApp.png").default,
   jestLogo: require("./jest.png"),
   testingLibraryLogo: require("./react-testing-library.jpg"),
   cypressLogo: require("./cypress.png"),

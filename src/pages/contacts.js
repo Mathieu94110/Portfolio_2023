@@ -12,13 +12,12 @@ const Contacts = () => {
         <title>Contacts</title>
         <meta name="description" content="Formulaire de contact" />
       </Head>
-      <main className="w-full flex flex-col items-center justify-center dark:text-light">
+      <main className="w-full flex flex-col items-center justify-center text-light">
         <Layout>
           <AnimatedText
             text="Formulaire de contact"
             className="mb-16 3xl:!text-6xl 2xl:!text-4xl sm:mb-8 sm:!text-lg"
           />
-
           <div className="flex justify-center">
             <ContactForm />
           </div>

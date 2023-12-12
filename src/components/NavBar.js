@@ -8,16 +8,16 @@ const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
 
   return (
-    <Link href={href} className={`${className} relative group`}>
+    <Link href={href} className={`${className} relative group text-light`}>
       {title}
 
       <span
         className={`
-          h-[1px] inline-block  bg-dark
+          h-[1px] inline-block 
           absolute left-0 -bottom-0.5
           group-hover:w-full transition-[width] ease duration-300
           ${router.asPath === href ? "w-full" : "w-0"}
-          dark:bg-light`}
+          bg-light`}
       >
         &nbsp;
       </span>
@@ -36,18 +36,18 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
   return (
     <button
       href={href}
-      className={`${className} relative group text-light dark:text-dark my-2`}
+      className={`${className} relative group my-2`}
       onClick={handleClick}
     >
-      {title}
+      <span className={` text-dark`}>{title}</span>
 
       <span
         className={`
-          h-[1px] inline-block  bg-light
+          h-[1px] inline-block  bg-dark
           absolute left-0 -bottom-0.5
           group-hover:w-full transition-[width] ease duration-300
           ${router.asPath === href ? "w-full" : "w-0"}
-          dark:bg-dark`}
+          `}
       >
         &nbsp;
       </span>
@@ -65,25 +65,25 @@ const NavBar = () => {
   return (
     <header
       className="w-full px-32 py-8 font-medium flex items-center justify-between
-    dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8
+     relative z-10 lg:px-16 md:px-12 sm:px-8
     "
     >
       <button
-        className=" flex-col justify-center items-center hidden lg:flex"
+        className=" flex-col justify-center items-center -white hidden lg:flex"
         onClick={handleClick}
       >
         <span
-          className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${
+          className={`bg-white block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${
             isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
           }`}
         ></span>
         <span
-          className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
+          className={`bg-white  block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
             isOpen ? "opacity-0" : "opacity-100"
           } `}
         ></span>
         <span
-          className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+          className={`bg-white  block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
             isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
           } `}
         ></span>
@@ -106,7 +106,7 @@ const NavBar = () => {
             linke
             whileTap={{ scale: 0.9 }}
           >
-            <GithubIcon />
+            <GithubIcon className={`text-light`} />
           </motion.a>
           <motion.a
             href="https://www.linkedin.com/in/mathieu-enault-2a571084
@@ -126,7 +126,7 @@ const NavBar = () => {
           initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
           animate={{ scale: 1, opacity: 1 }}
           className="min-w-[70vw] sm:min-w-[90vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-      bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32
+          bg-light rounded-lg backdrop-blur-md py-32
       "
         >
           <nav className="flex items-center flex-col justify-center">
@@ -160,7 +160,7 @@ const NavBar = () => {
             <motion.a
               href="https://github.com/Mathieu94110"
               target={"_blank"}
-              className="w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1"
+              className="w-6 mx-3 bg-light rounded-full  sm:mx-1"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >

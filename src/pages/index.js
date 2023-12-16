@@ -23,12 +23,12 @@ export default function Home() {
       <main className="flex items-center w-full text-light sm:items-start bg-[#333]">
         <Layout className=" md:pt-16">
           <div className="flex items-center justify-between w-full lg:flex-col h-[calc(100vh_-_180px)] sm:h-auto">
-            <div className="w-1/3 md:w-full">
+            <div className="w-1/3">
               <Image
                 src={profilePic}
                 alt="Mathieu Enault"
                 width={200}
-                className="m-auto 2xl:w-[300px]  3xl:w-[400px] "
+                className="m-auto 2xl:w-[300px] 3xl:w-[300px]"
                 priority
               />
             </div>

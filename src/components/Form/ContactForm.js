@@ -93,7 +93,7 @@ export default function ContactForm() {
                       "La valeur du champs ne doit pas dépasser 30 caractères",
                   },
                 })}
-                className="focus:border-2 focus:border-black focus:block focus:w-full focus:p-4 focus:rounded focus:outline-none focus:text-base border border-black block w-full p-4 rounded duration-150 ease outline-none text-base"
+                className="focus:border-2 focus:border-black focus:block focus:w-full focus:p-2 focus:rounded focus:outline-none focus:text-base border border-black block w-full p-2 rounded duration-150 ease outline-none text-base"
                 placeholder="Nom"
               />
 
@@ -115,7 +115,7 @@ export default function ContactForm() {
                   pattern:
                     /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
                 })}
-                className="focus:border-2 focus:block focus:w-full focus:p-4 focus:rounded focus:outline-none focus:text-base border  border-black mb-4 block w-full p-4 rounded duration-150 ease outline-none text-base"
+                className="focus:border-2 focus:block focus:w-full focus:p-2 focus:rounded focus:outline-none focus:text-base border  border-black block w-full p-2 rounded duration-150 ease outline-none text-base"
                 placeholder="Email"
               ></input>
               {errors.email ? (
@@ -133,7 +133,7 @@ export default function ContactForm() {
                 {...register("message", {
                   required: true,
                 })}
-                className="h-32 w-full  block focus:border-2 p-4 rounded transition duration-150 ease outline-none text-base focus:text-base border border-black"
+                className="h-22 w-full  block focus:border-2 p-2 rounded transition duration-150 ease outline-none text-base focus:text-base border border-black"
                 placeholder="Message"
               ></textarea>
               {errors.message ? (
@@ -146,7 +146,7 @@ export default function ContactForm() {
             </div>
             <input
               type="submit"
-              className="block w-full bg-[#000] border-none rounded p-4 text-base text-white font-semibold hover:cursor-pointer"
+              className="block w-full bg-[#000] border-none rounded p-2 text-base text-white font-semibold hover:cursor-pointer"
             />
           </form>
         </div>

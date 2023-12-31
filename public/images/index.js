@@ -1,7 +1,8 @@
 const IMAGES = {
-  helloWorld: require("./hello-world.png").default,
   goToTheMoon: require("./go-to-the-moon.png").default,
-  travelAgency: require("./travel-agency.png").default,
+  candyShop: require("./candy-shop.png").default,
+  countryApp: require("./country-app.png").default,
+  youtubeClone: require("./youtube-clone.png").default,
   cryptoApp: require("./crypto-app-logo.png").default,
   spotifyLogo: require("./spotify.png").default,
   spotifyApp: require("./spotify-logo.png").default,

@@ -4,8 +4,8 @@ import Head from "next/head";
 import IMAGES from "../../public/images";
 import { motion } from "framer-motion";
 import {
-  HelloWorldImgs,
   goToTheMoonAndTravelAgencyImgs,
+  vue2ProjectsImgs,
   CryptoProjectImgs,
   SpotifyProjectImgs,
   EcoProjectImgs,
@@ -69,37 +69,37 @@ const projects = () => {
           >
             <motion.div variants={images}>
               <Project
-                title="Template responsive hello world"
-                img={IMAGES.helloWorld}
+                title="Template responsive go to the moon"
+                img={IMAGES.goToTheMoon}
                 type="Projet d'intégration"
                 description="Projet d'intégration responsive en Html5 et Css3"
-                link="https://mathieu94110.github.io/Hello-world-project/"
-                github="https://github.com/Mathieu94110/Hello-world-project"
-                skills={HelloWorldImgs}
+                link="https://mathieu94110.github.io/Go-to-the-moon-project/"
+                github="https://github.com/Mathieu94110/Go-to-the-moon-project"
+                skills={goToTheMoonAndTravelAgencyImgs}
                 index={0}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">
               <Project
-                title="Template responsive travel agency"
-                type="Projet d'intégration"
-                description="Projet d'intégration responsive en Html5 et Scss"
-                img={IMAGES.travelAgency}
-                link="https://mathieu94110.github.io/Travel-agency-project/"
-                github="https://github.com/Mathieu94110/Travel-agency-project"
-                skills={goToTheMoonAndTravelAgencyImgs}
+                title="candyShop"
+                type="Projet Vue2/VueX"
+                description="Projet de boutique en ligne de bonbons"
+                img={IMAGES.candyShop}
+                link="https://candy-shop-theta.vercel.app/shop"
+                github="https://github.com/Mathieu94110/CandyShop"
+                skills={vue2ProjectsImgs}
                 index={1}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">
               <Project
-                title="ChatApp"
-                type="Spa en NodeJs"
-                description="Projet de chat en direct avec socket.io incluant un système d'authentification"
-                img={IMAGES.chatApp}
-                link=""
-                github="https://github.com/Mathieu94110/chatApp"
-                skills={goToTheMoonAndTravelAgencyImgs}
+                title="countriesApp"
+                type="Projet Vue2"
+                description="Projet permettant de retrouver les drapeaux des pays avec des informations sur ces derniers"
+                img={IMAGES.countryApp}
+                link="https://mathieu94110.github.io/country-app-v2/"
+                github="https://github.com/Mathieu94110/country-app-v2"
+                skills={vue2ProjectsImgs}
                 index={2}
               />
             </motion.div>
@@ -130,18 +130,6 @@ const projects = () => {
 
             <motion.div variants={images} className="group relative">
               <Project
-                title="Mon application Spotify"
-                type="Spa en React/Redux"
-                description="Clone de l'application Spotify recourant aux services de l'api de spotify, offrant diverses fonctionnalités ( historique des écoutes, recherche/création de playlists etc ...) "
-                img={IMAGES.spotifyApp}
-                link=""
-                github="https://github.com/Mathieu94110/My_spotify-app"
-                skills={SpotifyProjectImgs}
-                index={5}
-              />
-            </motion.div>
-            <motion.div variants={images} className="group relative">
-              <Project
                 img={IMAGES.cocktailsApp}
                 title="CocktailsApp"
                 type="Spa en React/Typescript/Node/MongoDb"
@@ -149,7 +137,7 @@ const projects = () => {
                 link="http://vps-26aea99b.vps.ovh.net"
                 github="https://github.com/Mathieu94110/CocktailsApp"
                 skills={fullStackReactExpressProjectsImgs}
-                index={6}
+                index={5}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">
@@ -161,7 +149,31 @@ const projects = () => {
                 link="https://react-amazon-clone-xi.vercel.app/"
                 github="https://github.com/Mathieu94110/ReactAmazonClone"
                 skills={fullStackReactExpressProjectsImgs}
+                index={6}
+              />
+            </motion.div>
+            <motion.div variants={images} className="group relative">
+              <Project
+                img={IMAGES.youtubeClone}
+                title="Youtube clone"
+                type="Spa en React/Typescript"
+                description="Projet de clone de youtube en React/Typescript"
+                link="https://youtube-clone-sandy-nu.vercel.app/"
+                github="https://github.com/Mathieu94110/YoutubeClone"
+                skills={CryptoProjectImgs}
                 index={7}
+              />
+            </motion.div>
+            <motion.div variants={images} className="group relative">
+              <Project
+                title="Mon application Spotify"
+                type="Spa en React/Redux"
+                description="Clone de l'application Spotify recourant aux services de l'api de spotify, offrant diverses fonctionnalités ( historique des écoutes, recherche/création de playlists etc ...) "
+                img={IMAGES.spotifyApp}
+                link=""
+                github="https://github.com/Mathieu94110/My_spotify-app"
+                skills={SpotifyProjectImgs}
+                index={8}
               />
             </motion.div>
 
@@ -174,7 +186,7 @@ const projects = () => {
                 link="https://air-bnb-clone-black.vercel.app/"
                 github="https://github.com/Mathieu94110/AirBnbClone"
                 skills={NextsJsCloneProjectsImgs}
-                index={8}
+                index={9}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">
@@ -186,7 +198,7 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/AirBnbClone"
                 skills={NextsJsCloneProjectsImgs}
-                index={9}
+                index={10}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">
@@ -198,7 +210,7 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/MovieApp"
                 skills={NextsJsMovieAppImgs}
-                index={10}
+                index={11}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">
@@ -210,7 +222,7 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/TIc-Tac-Toe"
                 skills={reactNativeTypescriptImgs}
-                index={11}
+                index={12}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">
@@ -222,7 +234,7 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/uber-eats-app"
                 skills={reactNativeTypescriptAndReduxImgs}
-                index={12}
+                index={13}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">
@@ -234,7 +246,7 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/tinderApp"
                 skills={reactNativeTypescriptAndFirebase}
-                index={13}
+                index={14}
               />
             </motion.div>
             <motion.div variants={images} className="group relative">
@@ -246,7 +258,7 @@ const projects = () => {
                 link=""
                 github="https://github.com/Mathieu94110/AmazonClone"
                 skills={reactNativeTypescriptAndFirebase}
-                index={14}
+                index={15}
               />
             </motion.div>
           </motion.div>

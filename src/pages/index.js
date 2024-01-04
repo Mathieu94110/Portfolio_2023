@@ -34,7 +34,7 @@ export default function Home() {
             </div>
             <div className="w-2/3 mx-8 flex flex-col items-center self-center lg:w-full lg:text-center sm:pr-0">
               <AnimatedText
-                text="Développeur front-end ReactJs/React Native"
+                text="Développeur front-end ReactJs/VueJs"
                 className="!text-6xl !text-left 
                 2xl:!text-4xl lg:!text-center lg:!text=3xl md:!text-3xl sm:!text-2xl
                 "
@@ -43,7 +43,7 @@ export default function Home() {
                 Je suis un développeur web qui recherche constamment à améliorer
                 ses compétences en créant de nouvelles applications et en
                 effectuant de la veille technologique principalement autour de
-                Javascript, React, React Native et NextJs.
+                Javascript, React, React Native et NextJs et Vue.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 {/* have to fixe issue on cv downloading ! <Link

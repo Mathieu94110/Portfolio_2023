@@ -5,7 +5,8 @@ import IMAGES from "../../public/images";
 import { motion } from "framer-motion";
 import {
   goToTheMoonAndTravelAgencyImgs,
-  vue2ProjectsImgs,
+  countryAppImg,
+  candyShopImg,
   CryptoProjectImgs,
   SpotifyProjectImgs,
   EcoProjectImgs,
@@ -81,25 +82,25 @@ const projects = () => {
             </motion.div>
             <motion.div variants={images} className="group relative">
               <Project
-                title="candyShop"
-                type="Projet Vue2/VueX"
-                description="Projet de boutique en ligne de bonbons"
-                img={IMAGES.candyShop}
-                link="https://candy-shop-theta.vercel.app/shop"
-                github="https://github.com/Mathieu94110/CandyShop"
-                skills={vue2ProjectsImgs}
-                index={1}
-              />
-            </motion.div>
-            <motion.div variants={images} className="group relative">
-              <Project
                 title="countriesApp"
                 type="Projet Vue2"
                 description="Projet permettant de retrouver les drapeaux des pays avec des informations sur ces derniers"
                 img={IMAGES.countryApp}
                 link="https://mathieu94110.github.io/country-app-v2/"
                 github="https://github.com/Mathieu94110/country-app-v2"
-                skills={vue2ProjectsImgs}
+                skills={countryAppImg}
+                index={1}
+              />
+            </motion.div>
+            <motion.div variants={images} className="group relative">
+              <Project
+                title="candyShop"
+                type="Projet Vue2/VueX"
+                description="Projet de boutique en ligne de bonbons"
+                img={IMAGES.candyShop}
+                link="https://candy-shop-theta.vercel.app/shop"
+                github="https://github.com/Mathieu94110/CandyShop"
+                skills={candyShopImg}
                 index={2}
               />
             </motion.div>

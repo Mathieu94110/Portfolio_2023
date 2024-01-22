@@ -24,9 +24,8 @@ const SpotifyProjectImgs = [
   IMAGES.testingLibraryLogo,
   IMAGES.jestLogo,
 ];
-const vue2ProjectsImgs = [
-  IMAGES.logoVue,
-]
+const candyShopImg = [IMAGES.logoVue, IMAGES.testingLibraryLogo];
+const countryAppImg = [IMAGES.logoVue];
 const EcoProjectImgs = [
   IMAGES.logoVue,
   IMAGES.logoTypescript,
@@ -161,7 +160,8 @@ const Project = ({
 
 export {
   HelloWorldImgs,
-  vue2ProjectsImgs,
+  countryAppImg,
+  candyShopImg,
   goToTheMoonAndTravelAgencyImgs,
   CryptoProjectImgs,
   SpotifyProjectImgs,

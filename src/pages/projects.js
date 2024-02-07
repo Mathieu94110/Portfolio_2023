@@ -98,7 +98,7 @@ const projects = () => {
                 type="Projet Vue2/VueX"
                 description="Projet de boutique en ligne de bonbons"
                 img={IMAGES.candyShop}
-                link="https://candy-shop-theta.vercel.app/shop"
+                link="https://candy-shop-theta.vercel.app"
                 github="https://github.com/Mathieu94110/CandyShop"
                 skills={candyShopImg}
                 index={2}

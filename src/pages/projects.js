@@ -108,9 +108,9 @@ const projects = () => {
               <Project
                 img={IMAGES.eco}
                 title="Eco"
-                type="Spa en Vue/VueX/Typescript/Node/MongoDb"
-                description="Projet fullstack avec tests d'intération et e2e, avec système de création et connection, de modifier les informations du profil, de rechercher des articles par catégories, favoris etc..."
-                link=""
+                type="Spa en Vue3/VueX/Typescript/Node/MongoDb"
+                description="Projet fullstack autour des jeux vidéos, incluant un système de création et connection, de recherche de jeux, un carrousel, système de favoris etc..."
+                link="https://eco-peach.vercel.app"
                 github="https://github.com/Mathieu94110/Eco"
                 skills={EcoProjectImgs}
                 index={3}
@@ -118,8 +118,8 @@ const projects = () => {
             </motion.div>
             <motion.div variants={images} className="group relative">
               <Project
-                title="Mon application de cryptomonnaies"
-                type="Spa en React/Redux/Typescript"
+                title="CryptoApp"
+                type="Spa en React18/Redux/Typescript"
                 description="Projet dédié au suivi et à l'évolution des crypto-monnaies recourant aux services de l'api coin-gecko"
                 img={IMAGES.cryptoApp}
                 github="https://github.com/Mathieu94110/CryptoApp"
@@ -133,7 +133,7 @@ const projects = () => {
               <Project
                 img={IMAGES.cocktailsApp}
                 title="CocktailsApp"
-                type="Spa en React/Typescript/Node/MongoDb"
+                type="Spa en React18/Typescript/Node/MongoDb"
                 description="Projet fullstack avec tests d'intération et e2e, fonctionnant grâce à l'api Context de React et le système de hook (useReducer), offrant notamment un système de recherche multi-filtre"
                 link="http://vps-26aea99b.vps.ovh.net"
                 github="https://github.com/Mathieu94110/CocktailsApp"
@@ -145,7 +145,7 @@ const projects = () => {
               <Project
                 img={IMAGES.reactAmazonClone}
                 title="Amazon clone"
-                type="Spa en React/Typescript/Node/MongoDb"
+                type="Spa en React18/Typescript/Node/MongoDb"
                 description="Projet fullstack React/Typescript/ExpressJs/MongoDb sur le model d'Amazon, fonctionnant grâce à l'api Context de React et offrant des fonctionnalités avancées"
                 link="https://react-amazon-clone-xi.vercel.app/"
                 github="https://github.com/Mathieu94110/ReactAmazonClone"
@@ -157,7 +157,7 @@ const projects = () => {
               <Project
                 img={IMAGES.youtubeClone}
                 title="Youtube clone"
-                type="Spa en React/Typescript"
+                type="Spa en React18/Typescript"
                 description="Projet de clone de youtube en React/Typescript"
                 link="https://youtube-clone-sandy-nu.vercel.app/"
                 github="https://github.com/Mathieu94110/YoutubeClone"
@@ -168,7 +168,7 @@ const projects = () => {
             <motion.div variants={images} className="group relative">
               <Project
                 title="Mon application Spotify"
-                type="Spa en React/Redux"
+                type="Spa en React18/Redux"
                 description="Clone de l'application Spotify recourant aux services de l'api de spotify, offrant diverses fonctionnalités ( historique des écoutes, recherche/création de playlists etc ...) "
                 img={IMAGES.spotifyApp}
                 link=""

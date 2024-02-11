@@ -24,7 +24,11 @@ const SpotifyProjectImgs = [
   IMAGES.testingLibraryLogo,
   IMAGES.jestLogo,
 ];
-const candyShopImg = [IMAGES.logoVue, IMAGES.testingLibraryLogo];
+const candyShopImg = [
+  IMAGES.logoVue,
+  IMAGES.testingLibraryLogo,
+  IMAGES.jestLogo,
+];
 const countryAppImg = [IMAGES.logoVue];
 const EcoProjectImgs = [
   IMAGES.logoVue,
@@ -32,7 +36,8 @@ const EcoProjectImgs = [
   IMAGES.logoNodeJs,
   IMAGES.logoMongoDb,
   IMAGES.logoSass,
-  IMAGES.cypressLogo,
+  IMAGES.testingLibraryLogo,
+  IMAGES.jestLogo,
 ];
 const fullStackReactExpressProjectsImgs = [
   IMAGES.logoReact,

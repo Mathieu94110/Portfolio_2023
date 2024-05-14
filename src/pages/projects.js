@@ -184,7 +184,7 @@ const projects = () => {
                 title="Airbnb Clone"
                 type="Projet NextJs"
                 description="Clone de l'application AirBnb, en NextJs/TailwindCss fonctionnant en SSR (server side rendering) permettant de rechercher des logements avec un système de recherche avancée"
-                link="https://air-bnb-clone-black.vercel.app/"
+                link="https://air-bnb-clone-swart.vercel.app/"
                 github="https://github.com/Mathieu94110/AirBnbClone"
                 skills={NextsJsCloneProjectsImgs}
                 index={9}

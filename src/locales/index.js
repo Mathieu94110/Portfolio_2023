@@ -1,89 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
-import IMAGES from "../../public/images";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
 
-const HelloWorldImgs = [IMAGES.logoHtmlCss, IMAGES.logoJavascript];
-const goToTheMoonAndTravelAgencyImgs = [
-  IMAGES.logoHtmlCss,
-  IMAGES.logoJavascript,
-  IMAGES.logoSass,
-];
-
-const CryptoProjectImgs = [
-  IMAGES.logoReact,
-  IMAGES.logoTypescript,
-  IMAGES.logoSass,
-];
-const SpotifyProjectImgs = [
-  IMAGES.logoReact,
-  IMAGES.spotifyLogo,
-  IMAGES.logoSass,
-  IMAGES.testingLibraryLogo,
-  IMAGES.jestLogo,
-];
-const candyShopImg = [
-  IMAGES.logoVue,
-  IMAGES.testingLibraryLogo,
-  IMAGES.jestLogo,
-];
-const countryAppImg = [IMAGES.logoVue];
-const EcoProjectImgs = [
-  IMAGES.logoVue,
-  IMAGES.logoTypescript,
-  IMAGES.logoNodeJs,
-  IMAGES.logoMongoDb,
-  IMAGES.logoSass,
-  IMAGES.testingLibraryLogo,
-  IMAGES.jestLogo,
-];
-const fullStackReactExpressProjectsImgs = [
-  IMAGES.logoReact,
-  IMAGES.logoTypescript,
-  IMAGES.logoNodeJs,
-  IMAGES.logoMongoDb,
-  IMAGES.testingLibraryLogo,
-  IMAGES.jestLogo,
-  IMAGES.cypressLogo,
-];
-
-const NextsJsCloneProjectsImgs = [
-  IMAGES.logoNextJs,
-  IMAGES.logoTypescript,
-  IMAGES.logoTailwindCss,
-];
-const NextsJsMovieAppImgs = [
-  IMAGES.logoNextJs,
-  IMAGES.logoTypescript,
-  IMAGES.logoSass,
-];
-const reactNativeTypescriptImgs = [
-  IMAGES.reactNativeLogo,
-  IMAGES.logoTypescript,
-];
-const reactNativeTypescriptAndReduxImgs = [
-  IMAGES.reactNativeLogo,
-  IMAGES.logoTypescript,
-  IMAGES.reduxLogo,
-  IMAGES.logoTailwindCss,
-];
-const reactNativeTypescriptAndFirebase = [
-  IMAGES.reactNativeLogo,
-  IMAGES.logoTypescript,
-  IMAGES.firebase,
-];
-
-const Project = ({
+export const Project = ({
   title,
   img,
   type,
   description,
   link,
   github,
-  skills,
-  index,
+  logos
 }) => {
   return (
     <article>
@@ -116,7 +44,7 @@ const Project = ({
                   </h3>
                   <span className="h-10 flex justify-center items-center">
                     <span className="flex flex-row mt-2">
-                      {skills?.map((skill, index) => (
+                      {logos?.map((skill, index) => (
                         <li
                           className="w-8 h-8 px-1 items-center justify-center"
                           key={index}
@@ -163,19 +91,4 @@ const Project = ({
   );
 };
 
-export {
-  HelloWorldImgs,
-  countryAppImg,
-  candyShopImg,
-  goToTheMoonAndTravelAgencyImgs,
-  CryptoProjectImgs,
-  SpotifyProjectImgs,
-  EcoProjectImgs,
-  fullStackReactExpressProjectsImgs,
-  NextsJsCloneProjectsImgs,
-  NextsJsMovieAppImgs,
-  reactNativeTypescriptImgs,
-  reactNativeTypescriptAndReduxImgs,
-  reactNativeTypescriptAndFirebase,
-  Project,
-};
+

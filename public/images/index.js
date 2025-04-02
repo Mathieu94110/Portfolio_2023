@@ -1,7 +1,6 @@
 const IMAGES = {
   goToTheMoon: require("./go-to-the-moon.png").default,
   candyShop: require("./candy-shop.png").default,
-  countryApp: require("./country-app.png").default,
   youtubeClone: require("./youtube-clone.png").default,
   cryptoApp: require("./crypto-app-logo.png").default,
   spotifyLogo: require("./spotify.png").default,
@@ -20,6 +19,7 @@ const IMAGES = {
   reduxLogo: require("./redux.png").default,
   logoHtmlCss: require("./html-css.png").default,
   logoJavascript: require("./javascript.png").default,
+  logoAngular: require("./angular.png").default,
   logoReact: require("./react.png").default,
   logoNextJs: require("./nextjs.png").default,
   logoVue: require("./vue.png").default,

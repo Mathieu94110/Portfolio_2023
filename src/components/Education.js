@@ -53,7 +53,7 @@ const Education = () => {
             info="Formation DEV & GO : 16 semaines en formation
             intensive dans les locaux d'ÉPITECH . Piscine PHP (4 semaines),
             Intégration web avec html5,css3(sass,less),Javascript (6
-            semaines). Projets autour des frameworks AngularJs et React.js.(4
+            semaines). Projets autour des frameworks Angular et React.js.(4
             semaines) Ui/Ux , gestion de projets (méthode agile),
             Référencement , accessibilité(1 semaine) Création d'un portfolio
             et déploiement sur Github (1 semaine)."

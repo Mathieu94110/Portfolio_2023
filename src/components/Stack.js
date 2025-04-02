@@ -1,20 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import IMAGES from "../../public/images";
-
-const stackImgs = [
-  IMAGES.logoHtmlCss,
-  IMAGES.logoJavascript,
-  IMAGES.logoReact,
-  IMAGES.reactNativeLogo,
-  IMAGES.logoNextJs,
-  IMAGES.logoVue,
-  IMAGES.logoTypescript,
-  IMAGES.logoNodeJs,
-  IMAGES.logoMongoDb,
-  IMAGES.logoSass,
-  IMAGES.logoTailwindCss,
-];
+import { stackImgs } from "@/constants/stack";
 
 const Stack = () => {
   return (
@@ -36,7 +22,7 @@ const Stack = () => {
               className="w-24 h-24 mx-2 flex sm:w-12 sm:h-12 xs:w-10 xs:h-10  2xl:w-20 2xl:h-20   items-center"
               key={index}
             >
-              <Image src={stack} alt={stack} />
+              <Image src={stack.src} alt={stack.alt} height={stack.height} width={stack.width} />
             </li>
           ))}
         </ul>

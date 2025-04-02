@@ -22,26 +22,24 @@ const about = () => {
           />
           <div className="grid w-full grid-cols-6 gap-16 sm:gap-6">
             <div className="col-span-3 place-items: center; flex flex-col h-full  items-start justify-start xl:col-span-4 xl:col-start-2 xl:col-end-6 xl:order-2 md:col-span-8">
-              <h2 className="mb-4 text-lg font-bold uppercase text-light">
+              <h2 className="mb-12 text-lg font-bold uppercase text-light">
                 Biographie
               </h2>
-              <p className="3xl:!text-2xl 2xl:!text-xl sm:!text-sm  md:font-medium text-light">
-                Je m'apelle Mathieu Enault, j'ai 35 ans, j'ai éffectué de
-                Février à Juin 2019 une formation à la coding-academy d'Épitech
-                , qui m'a permis d'acquérir les bases du développement
-                front-end.
+              <p className="3xl:!text-2xl 2xl:!text-xl sm:!text-sm  md:font-medium text-light mb-8">
+                Je m'apelle Mathieu Enault, j'ai 36 ans et je suis passionné par le développement web.
+              </p>
+              <p className="3xl:!text-2xl 2xl:!text-xl sm:!text-sm  md:font-medium text-light mb-8">
+                J'ai tout d'abord acquis les bases solides du développement front-end lors de ma formation à la Coding-Academy d'Épitech.</p>  <p className="3xl:!text-2xl 2xl:!text-xl sm:!text-sm  md:font-medium text-light mb-8">Depuis, j'ai enrichi mon parcours à travers diverses expériences professionnelles, où j'ai pu approfondir mes connaissances, notamment en Angular et Vue.js. Mon objectif est de toujours repousser les limites de mon expertise technique, tout en contribuant à des projets innovants.
               </p>
 
-              <p className="my-4 3xl:!text-2xl 2xl:!text-xl sm:!text-sm md:font-medium text-light">
-                J'ai travaillé par la suite dans 2 entreprises , dans la
-                première en tant que développeur front-end Angular 7, dans la
-                deuxième en tant que développeur front-end Vue2
+              <p className="my-4 3xl:!text-2xl 2xl:!text-xl sm:!text-sm md:font-medium text-light mb-8">
+                J'ai travaillé dans plusieurs entreprises, en tant que développeur Angular et une en Vue.js.</p>
+              <p className="my-4 3xl:!text-2xl 2xl:!text-xl sm:!text-sm md:font-medium text-light mb-8">
+                Ces expériences m'ont permis de renforcer mes compétences, d'optimiser la performance des applications et de collaborer étroitement avec les équipes backend pour des solutions complètes. Lors de ma dernière expérience au sein d'une ESN reconnue, j'ai perfectionné ma maîtrise d'Angular et appliqué les meilleures pratiques dans des projets complexes.
               </p>
 
               <p className="3xl:!text-2xl 2xl:!text-xl sm:!text-sm md:font-medium text-light/75">
-                Depuis je me perfectionne dans des domaines transverse comme les
-                tests, la partie backend avec NodeJs et MongoDb ou la découverte
-                de frameworks React comme NextJs.
+                Aujourd'hui, je continue à me perfectionner en tant que développeur front-end et dans des domaines transverses comme les tests, l'algorithmique et le développement backend.
               </p>
             </div>
 

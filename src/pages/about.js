@@ -1,8 +1,7 @@
 import AnimatedText from "@/components/AnimatedText";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
-import Layout from "@/components/Layout";
-import Skills from "@/components/Skills";
+import Layout from "@/components/Layout"
 import Stack from "@/components/Stack";
 import Head from "next/head";
 import Image from "next/image";
@@ -45,8 +44,7 @@ const about = () => {
 
             <div
               className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark
-bg-light p-8 xl:col-span-4 xl:col-start-2 xl:col-end-6 xl:order-1 md:col-span-8 sm:p-2
-"
+            bg-light p-8 xl:col-span-4 xl:col-start-2 xl:col-end-6 xl:order-1 md:col-span-8 sm:p-2"
             >
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
               <Image
@@ -59,8 +57,6 @@ bg-light p-8 xl:col-span-4 xl:col-start-2 xl:col-end-6 xl:order-1 md:col-span-8 
               />
             </div>
           </div>
-
-          <Skills />
           <Experience />
           <Education />
           <Stack />

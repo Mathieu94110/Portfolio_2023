@@ -1,5 +1,4 @@
 import AnimatedText from "@/components/AnimatedText";
-import { GithubIcon } from "@/components/Icons";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import React from "react";

@@ -15,6 +15,7 @@ import {
 
 export const projectImgs = [
     {
+        id: 0,
         title: "Template responsive go to the moon",
         img: IMAGES.goToTheMoon,
         type: "Projet d'intégration",
@@ -24,6 +25,7 @@ export const projectImgs = [
         logos: goToTheMoonAndTravelAgencyImgs
     },
     {
+        id: 1,
         title: "candyShop",
         img: IMAGES.candyShop,
         type: "Projet Vue2/VueX",
@@ -34,6 +36,7 @@ export const projectImgs = [
     },
 
     {
+        id: 2,
         img: IMAGES.eco,
         title: "Eco",
         type: "Spa en Vue3/VueX/Typescript/Node/MongoDb",
@@ -44,6 +47,7 @@ export const projectImgs = [
     },
 
     {
+        id: 3,
         title: "CryptoApp",
         type: "Spa en React18/Redux/Typescript",
         description: "Projet dédié au suivi et à l'évolution des crypto-monnaies recourant aux services de l'api coin-gecko",
@@ -53,8 +57,8 @@ export const projectImgs = [
         logos: CryptoProjectImgs
     },
     {
+        id: 4,
         img: IMAGES.cocktailsApp,
-
         title: "CocktailsApp",
         type: "Spa en React18/Typescript/Node/MongoDb",
         description: "Projet fullstack avec tests d'intération et e2e, fonctionnant grâce à l'api Context de React et le système de hook (useReducer), offrant notamment un système de recherche multi-filtre",
@@ -63,6 +67,7 @@ export const projectImgs = [
         logos: fullStackReactExpressProjectsImgs
     },
     {
+        id: 5,
         img: IMAGES.reactAmazonClone,
         title: "Amazon clone",
         type: "Spa en React18/Typescript/Node/MongoDb",
@@ -72,8 +77,8 @@ export const projectImgs = [
         logos: fullStackReactExpressProjectsImgs
     },
     {
+        id: 6,
         img: IMAGES.youtubeClone,
-
         title: "Youtube clone",
         type: "Spa en React18/Typescript",
         description: "Projet de clone de youtube en React/Typescript",
@@ -82,6 +87,7 @@ export const projectImgs = [
         logos: CryptoProjectImgs
     },
     {
+        id: 7,
         title: "Mon application Spotify",
         type: "Spa en React18/Redux",
         description: "Clone de l'application Spotify recourant aux services de l'api de spotify, offrant diverses fonctionnalités ( historique des écoutes, recherche/création de playlists etc ...) ",
@@ -91,6 +97,7 @@ export const projectImgs = [
         logos: SpotifyProjectImgs
     },
     {
+        id: 8,
         img: IMAGES.airBnbClone,
         title: "Airbnb Clone",
         type: "Projet NextJs",
@@ -100,6 +107,7 @@ export const projectImgs = [
         logos: NextsJsCloneProjectsImgs
     },
     {
+        id: 9,
         img: IMAGES.twitterClone,
         title: "Twitter Clone",
         type: "Projet NextJS",
@@ -109,6 +117,7 @@ export const projectImgs = [
         logos: NextsJsCloneProjectsImgs
     },
     {
+        id: 10,
         img: IMAGES.movieApp,
         title: "MovieApp",
         type: "Projet NextJS",
@@ -118,6 +127,7 @@ export const projectImgs = [
         logos: NextsJsMovieAppImgs
     },
     {
+        id: 11,
         img: IMAGES.ticTacToe,
         title: "TicTacToe",
         type: "Projet React Native",
@@ -127,6 +137,7 @@ export const projectImgs = [
         logos: reactNativeTypescriptImgs
     },
     {
+        id: 12,
         img: IMAGES.uberEatsClone,
         title: "Uber Eats Clone",
         type: "Projet React Native/Firebase/Redux/Typescript",
@@ -136,6 +147,7 @@ export const projectImgs = [
         logos: reactNativeTypescriptAndReduxImgs
     },
     {
+        id: 13,
         img: IMAGES.tinderApp,
         title: "Tinder clone",
         type: "Projet React Native/Firebase/Typescript",
@@ -145,6 +157,7 @@ export const projectImgs = [
         logos: reactNativeTypescriptAndFirebase
     },
     {
+        id: 14,
         img: IMAGES.amazonApp,
         title: "Amazon clone",
         type: "Projet React Native/GoogleAuthentication/Typescript",

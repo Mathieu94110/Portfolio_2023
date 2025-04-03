@@ -54,8 +54,8 @@ const projects = () => {
             animate="show"
             className="grid grid-cols-4 gap-y-28 gap-x-12 2xl:grid-cols-3 xl:grid-cols-2 sm:grid-cols-1"
           >
-            {projectImgs.map((project, index) => (
-              <motion.div variants={images} className="group relative">
+            {projectImgs.map((project) => (
+              <motion.div variants={images} className="group relative" key={project.id}>
                 <Project
                   img={project.img}
                   title={project.title}
@@ -64,7 +64,6 @@ const projects = () => {
                   link={project.link}
                   github={project.github}
                   logos={project.logos}
-                  index={index}
                 />
               </motion.div>
             ))}

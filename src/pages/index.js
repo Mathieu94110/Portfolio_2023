@@ -1,5 +1,4 @@
 import AnimatedText from "@/components/AnimatedText";
-import { LinkArrow } from "@/components/Icons";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
@@ -59,17 +58,6 @@ export default function Home() {
                   Cv <LinkArrow className={"w-6 ml-1"} />
                 </Link> 
                 */}
-                <Link
-                  href="mailto:enault.mathieu2@gmail.com"
-                  target={"_blank"}
-                  className="flex items-center text-dark p-2.5 px-6
-                  rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
-                  border-2 border-solid border-transparent hover:border-dark
-                  bg-light md:p-2 md:px-4 md:text-base
-                  "
-                >
-                  Contact
-                </Link>
               </div>
             </div>
           </div>

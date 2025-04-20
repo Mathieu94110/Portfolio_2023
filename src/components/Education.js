@@ -48,7 +48,7 @@ const Education = () => {
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
             type="Certification développeur front-end"
-            time="2019-2020"
+            time="2020"
             place="Kremlin-Bicêtre 94270"
             info="Formation DEV & GO : 16 semaines en formation
             intensive dans les locaux d'ÉPITECH . Piscine PHP (4 semaines),

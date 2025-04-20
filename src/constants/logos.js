@@ -10,6 +10,8 @@ const CryptoProjectImgs = [
     IMAGES.logoReact,
     IMAGES.logoTypescript,
     IMAGES.logoSass,
+    IMAGES.testingLibraryLogo,
+    IMAGES.jestLogo,
 ];
 const SpotifyProjectImgs = [
     IMAGES.logoReact,

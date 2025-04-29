@@ -81,7 +81,7 @@ export const projects = [
         title: "MovieApp",
         type: "Projet NextJS",
         description: "Projet movie application, en NextJs/Typescript permettant de rechercher un film et d'en afficher les détails avec un système de traduction, de suggestion, et de recherche par filtre",
-        link: "https://vps-5dce9500.vps.ovh.net",
+        link: "https://movie-app-nu-rose.vercel.app/",
         github: "https://github.com/Mathieu94110/MovieApp",
         logos: NextsJsMovieAppImgs
     },

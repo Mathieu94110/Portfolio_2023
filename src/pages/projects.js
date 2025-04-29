@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import {
   Project,
 } from "../locales";
-import { projectImgs } from "@/constants/projects";
+import { projects } from "@/constants/projects";
 const variants = {
   hidden: { opacity: 0 },
   show: {
@@ -32,7 +32,7 @@ const images = {
   },
 };
 
-const projects = () => {
+const projectsPage = () => {
   return (
     <>
       <Head>
@@ -54,7 +54,7 @@ const projects = () => {
             animate="show"
             className="grid grid-cols-4 gap-y-28 gap-x-12 2xl:grid-cols-3 xl:grid-cols-2 sm:grid-cols-1"
           >
-            {projectImgs.map((project) => (
+            {projects.map((project) => (
               <motion.div variants={images} className="group relative" key={project.id}>
                 <Project
                   img={project.img}
@@ -74,4 +74,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default projectsPage;

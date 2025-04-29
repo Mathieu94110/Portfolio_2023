@@ -5,7 +5,13 @@ const goToTheMoonAndTravelAgencyImgs = [
     IMAGES.logoJavascript,
     IMAGES.logoSass,
 ];
-
+const SpaceXProjectImgs = [
+    IMAGES.logoAngular,
+    IMAGES.logoAngularMaterial,
+    IMAGES.logoTypescript,
+    IMAGES.logoSass,
+    IMAGES.jestLogo,
+];
 const CryptoProjectImgs = [
     IMAGES.logoReact,
     IMAGES.logoTypescript,
@@ -71,6 +77,7 @@ const reactNativeTypescriptAndFirebase = [
 ];
 
 export {
+    SpaceXProjectImgs,
     candyShopImg,
     goToTheMoonAndTravelAgencyImgs,
     CryptoProjectImgs,

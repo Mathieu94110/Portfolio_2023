@@ -11,13 +11,24 @@ import {
     reactNativeTypescriptImgs,
     reactNativeTypescriptAndReduxImgs,
     reactNativeTypescriptAndFirebase,
+    SpaceXProjectImgs,
 } from "./logos";
 
-export const projectImgs = [
+export const projects = [
     {
         id: 0,
+        title: "SpaceXApp",
+        type: "Projet Angular19/AngularMaterial",
+        description: "Projet dédié au suivi et à l'historique des vols SpaceX",
+        img: IMAGES.spaceXApp,
+        github: "https://github.com/Mathieu94110/spaceXApplication",
+        link: "https://space-x-application.vercel.app/",
+        logos: SpaceXProjectImgs
+    },
+    {
+        id: 1,
         title: "CryptoApp",
-        type: "Spa en React18/Redux/Typescript",
+        type: "Projet React18/Redux/Typescript",
         description: "Projet dédié au suivi et à l'évolution des crypto-monnaies recourant aux services de l'api coin-gecko",
         img: IMAGES.cryptoApp,
         github: "https://github.com/Mathieu94110/CryptoApp",
@@ -25,29 +36,29 @@ export const projectImgs = [
         logos: CryptoProjectImgs
     },
     {
-        id: 1,
+        id: 2,
         img: IMAGES.cocktailsApp,
         title: "CocktailsApp",
-        type: "Spa en React18/Typescript/Node/MongoDb",
+        type: "Projet React18/Typescript/Node/MongoDb",
         description: "Projet fullstack avec tests d'intération et e2e, fonctionnant grâce à l'api Context de React et le système de hook (useReducer), offrant notamment un système de recherche multi-filtre",
-        link: "http://vps-26aea99b.vps.ovh.net",
+        link: "http://149.202.41.180:8086/",
         github: "https://github.com/Mathieu94110/CocktailsApp",
         logos: fullStackReactExpressProjectsImgs
     },
     {
-        id: 2,
+        id: 3,
         img: IMAGES.reactAmazonClone,
         title: "Amazon clone",
-        type: "Spa en React18/Typescript/Node/MongoDb",
+        type: "Projet React18/Typescript/Node/MongoDb",
         description: "Projet fullstack React/Typescript/ExpressJs/MongoDb sur le model d'Amazon, fonctionnant grâce à l'api Context de React et offrant des fonctionnalités avancées",
         link: "https://react-amazon-clone-xi.vercel.app/",
         github: "https://github.com/Mathieu94110/ReactAmazonClone",
         logos: fullStackReactExpressProjectsImgs
     },
     {
-        id: 3,
+        id: 4,
         title: "Mon application Spotify",
-        type: "Spa en React18/Redux",
+        type: "Projet React18/Redux",
         description: "Clone de l'application Spotify recourant aux services de l'api de spotify, offrant diverses fonctionnalités ( historique des écoutes, recherche/création de playlists etc ...) ",
         img: IMAGES.spotifyApp,
         link: "",
@@ -55,17 +66,17 @@ export const projectImgs = [
         logos: SpotifyProjectImgs
     },
     {
-        id: 4,
+        id: 5,
         img: IMAGES.youtubeClone,
         title: "Youtube clone",
-        type: "Spa en React18/Typescript",
+        type: "Projet React18/Typescript",
         description: "Projet de clone de youtube en React/Typescript",
         link: "https://youtube-clone-sandy-nu.vercel.app/",
         github: "https://github.com/Mathieu94110/YoutubeClone",
         logos: CryptoProjectImgs
     },
     {
-        id: 5,
+        id: 6,
         img: IMAGES.movieApp,
         title: "MovieApp",
         type: "Projet NextJS",
@@ -75,7 +86,7 @@ export const projectImgs = [
         logos: NextsJsMovieAppImgs
     },
     {
-        id: 6,
+        id: 7,
         img: IMAGES.airBnbClone,
         title: "Airbnb Clone",
         type: "Projet NextJs",
@@ -85,7 +96,7 @@ export const projectImgs = [
         logos: NextsJsCloneProjectsImgs
     },
     {
-        id: 7,
+        id: 8,
         img: IMAGES.twitterClone,
         title: "Twitter Clone",
         type: "Projet NextJS",
@@ -95,7 +106,7 @@ export const projectImgs = [
         logos: NextsJsCloneProjectsImgs
     },
     {
-        id: 8,
+        id: 9,
         title: "candyShop",
         img: IMAGES.candyShop,
         type: "Projet Vue2/VueX",
@@ -106,17 +117,17 @@ export const projectImgs = [
     },
 
     {
-        id: 9,
+        id: 10,
         img: IMAGES.eco,
         title: "Eco",
-        type: "Spa en Vue3/VueX/Typescript/Node/MongoDb",
+        type: "Projet Vue3/VueX/Typescript/Node/MongoDb",
         description: "Projet fullstack autour des jeux vidéos, incluant un système de création et connection, de recherche de jeux, un carrousel, système de favoris etc...",
         link: "https://eco-peach.vercel.app",
         github: "https://github.com/Mathieu94110/Eco",
         logos: EcoProjectImgs
     },
     {
-        id: 10,
+        id: 11,
         img: IMAGES.ticTacToe,
         title: "TicTacToe",
         type: "Projet React Native",
@@ -126,7 +137,7 @@ export const projectImgs = [
         logos: reactNativeTypescriptImgs
     },
     {
-        id: 11,
+        id: 12,
         img: IMAGES.uberEatsClone,
         title: "Uber Eats Clone",
         type: "Projet React Native/Firebase/Redux/Typescript",
@@ -136,7 +147,7 @@ export const projectImgs = [
         logos: reactNativeTypescriptAndReduxImgs
     },
     {
-        id: 12,
+        id: 13,
         img: IMAGES.tinderApp,
         title: "Tinder clone",
         type: "Projet React Native/Firebase/Typescript",
@@ -146,7 +157,7 @@ export const projectImgs = [
         logos: reactNativeTypescriptAndFirebase
     },
     {
-        id: 13,
+        id: 14,
         img: IMAGES.amazonApp,
         title: "Amazon clone",
         type: "Projet React Native/GoogleAuthentication/Typescript",
@@ -157,7 +168,7 @@ export const projectImgs = [
     },
 
     {
-        id: 14,
+        id: 15,
         title: "Template responsive go to the moon",
         img: IMAGES.goToTheMoon,
         type: "Projet d'intégration",

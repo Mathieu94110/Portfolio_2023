@@ -122,7 +122,7 @@ export const projects = [
         title: "Eco",
         type: "Projet Vue3/VueX/Typescript/Node/MongoDb",
         description: "Projet fullstack autour des jeux vidéos, incluant un système de création et connection, de recherche de jeux, un carrousel, système de favoris etc...",
-        link: "https://eco-peach.vercel.app",
+        link: "https://eco-mathieu94110s-projects.vercel.app",
         github: "https://github.com/Mathieu94110/Eco",
         logos: EcoProjectImgs
     },

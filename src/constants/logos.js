@@ -1,10 +1,5 @@
 import IMAGES from "../../public/images";
 
-const goToTheMoonAndTravelAgencyImgs = [
-    IMAGES.logoHtmlCss,
-    IMAGES.logoJavascript,
-    IMAGES.logoSass,
-];
 const SpaceXProjectImgs = [
     IMAGES.logoAngular,
     IMAGES.logoAngularMaterial,
@@ -79,7 +74,6 @@ const reactNativeTypescriptAndFirebase = [
 export {
     SpaceXProjectImgs,
     candyShopImg,
-    goToTheMoonAndTravelAgencyImgs,
     CryptoProjectImgs,
     SpotifyProjectImgs,
     EcoProjectImgs,

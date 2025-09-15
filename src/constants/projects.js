@@ -1,7 +1,6 @@
 import IMAGES from "../../public/images"
 import {
     candyShopImg,
-    goToTheMoonAndTravelAgencyImgs,
     CryptoProjectImgs,
     SpotifyProjectImgs,
     EcoProjectImgs,
@@ -128,16 +127,6 @@ export const projects = [
     },
     {
         id: 11,
-        img: IMAGES.ticTacToe,
-        title: "TicTacToe",
-        type: "Projet React Native",
-        description: "Projet permettant de bien comprendre le fonctionnement global de React Native (syntaxe, styles, gestionnaires d'évènements etc...)",
-        link: "",
-        github: "https://github.com/Mathieu94110/TIc-Tac-Toe",
-        logos: reactNativeTypescriptImgs
-    },
-    {
-        id: 12,
         img: IMAGES.uberEatsClone,
         title: "Uber Eats Clone",
         type: "Projet React Native/Firebase/Redux/Typescript",
@@ -147,17 +136,7 @@ export const projects = [
         logos: reactNativeTypescriptAndReduxImgs
     },
     {
-        id: 13,
-        img: IMAGES.tinderApp,
-        title: "Tinder clone",
-        type: "Projet React Native/Firebase/Typescript",
-        description: "Avec système d'authentification de Google par mail et mot de passe, permet de consulter les profils disponibles, de matcher avec eux, et si le match est réciproque d'échanger avec la personne sur un tchat",
-        link: "",
-        github: "https://github.com/Mathieu94110/tinderApp",
-        logos: reactNativeTypescriptAndFirebase
-    },
-    {
-        id: 14,
+        id: 12,
         img: IMAGES.amazonApp,
         title: "Amazon clone",
         type: "Projet React Native/GoogleAuthentication/Typescript",
@@ -166,17 +145,6 @@ export const projects = [
         github: "https://github.com/Mathieu94110/AmazonClone",
         logos: reactNativeTypescriptAndFirebase
     },
-
-    {
-        id: 15,
-        title: "Template responsive go to the moon",
-        img: IMAGES.goToTheMoon,
-        type: "Projet d'intégration",
-        description: "Projet d'intégration responsive en Html5 et Css3",
-        link: "https://mathieu94110.github.io/Go-to-the-moon-project/",
-        github: "https://github.com/Mathieu94110/Go-to-the-moon-project",
-        logos: goToTheMoonAndTravelAgencyImgs
-    }
 ];
 
 
